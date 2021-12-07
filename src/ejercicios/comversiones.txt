@@ -1,0 +1,60 @@
+package ejercicios;
+
+import java.util.Scanner;
+
+public class gradosswitch {
+
+	// ºF = (ºC · 1,8) + 32
+	public static double caf(double grados) {
+		return (grados * 1.8) + 32;
+	}
+
+	public static double fac(double grados) {
+		return (grados - 32) * 5 / 9;
+	}
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		double grad = 0;
+		int dato = 0;
+		int opcion;
+
+		// entrada
+		do {
+
+			System.out.println("Opciones:");
+			System.out.println("Pulse 1 para pasar de ºC a ºF");
+			System.out.println("Pulse 2 para pasar de ºF a ºC");
+			System.out.println("Escribe 3 Para salir");
+			dato = sc.nextInt();
+
+			switch (dato) {
+			case 1: {
+				System.out.print("Escriba los grados ºC: ");
+				grad = sc.nextInt();
+				System.out.println(grad + " ºC son " + caf(grad) + " ºF");
+
+				break;
+			}
+			case 2: {
+				System.out.print("Escriba los grados ºF: ");
+				grad = sc.nextInt();
+				System.out.println(grad + " ºF son " + fac(grad) + " ºC");
+				break;
+			}
+			case 3: {
+				System.out.println("Gracias por su visita");
+				break;
+			}
+
+			}
+
+			System.out.println("Pulse 1 para seguir o 2 para salir");
+			opcion = sc.nextInt();
+		} while (opcion < 3);
+		System.out.println("Fin");
+		System.out.println("  ");
+
+	}
+}
