@@ -11,8 +11,8 @@ public class ejercicio8 {
 		System.out.println("Introduzca un número");
 		a=sc.nextInt();
 		
-		for(int j=1; j<a; j=j+1) {
-			System.out.print(j+",");
+		for(int j=1; j<=a; j=j+1) {
+			System.out.println(j);
 		}
 		
 	}
