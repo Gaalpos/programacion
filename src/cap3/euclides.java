@@ -4,29 +4,30 @@ import java.util.Scanner;
 
 public class euclides {
 	
+	public static int mcdR(int n1,int n2) {
+		if(n1%n2==0) {
+				return n2;
+		}else {
+			//reasignamos valores
+			return mcdR(n2,n1%n2);
+		}
+	}
+	
 	public static int mcd(int n1, int n2) {
 		boolean salir=false;
-		int divid=0;
-		int divis=0;
-		int mcd=0;
+		int divid=n1;
+		int divis=n2;
+		int mcd=1;
 		int resto=0;
 		
-		
 		do {
-			System.out.println("Dividendo: "+n1);
-			System.out.println("Divisor: "+n2);
-			//cociente=divid/divis;
 			resto=divid%divis;
-			//System.out.println("Cociente: "+cociente);
-			System.out.println("Resto: "+resto);
-			
 			if(resto==0) {
 				salir=true;
 				mcd=divis;
 			}else {
 				divid=divis;
 				divis=resto;
-				System.out.println("Aun no");
 			}
 		}while(!salir);
 		return mcd;
@@ -42,20 +43,15 @@ public class euclides {
 		// TODO Auto-generated method stub
 		int n1 = 0;
 		int n2 = 0;
-		int mcd=1;
-		int mcm=1;
-
-
+		
 		Scanner sc = new Scanner(System.in);
-
 		System.out.println("Término A: ");
 		n1 = sc.nextInt();
 		System.out.println("Término B: ");
 		n2 = sc.nextInt();
 	
-		mcd=mcd(n1,n2);
-		mcm=mcm(n1,n2);
-		System.out.println("El máximo comun divisor de "+n1 +" y "+n2+ "es "+mcd);
-		System.out.println("El min comun multiplo de "+n1 +" y "+n2+ "es "+mcm);
+		System.out.println("El máximo comun divisor de "+n1 +" y "+n2+ " es "+mcd(n1,n2));
+		System.out.println("El min comun multiplo de "+n1 +" y "+n2+ " es "+mcm(n1,n2));
+		System.out.println("El MCD crecursivo de "+n1 +" y "+n2+ " es "+mcdR(n1,n2));
 	}
 }
