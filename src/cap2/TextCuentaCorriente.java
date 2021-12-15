@@ -1,13 +1,10 @@
 package cap2;
 
-public class testCuenta {
-
+public class TextCuentaCorriente {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		
 		Cuenta dorada=new Cuenta();
-		Cuenta currela=new Cuenta("gabriel pazos",2999.99f);
+		Cuenta currela= new Cuenta("Gabriel Pazos",2999.99f);
 		
 		System.out.println(dorada.toString());
 		System.out.println(currela.toString());
@@ -20,6 +17,9 @@ public class testCuenta {
 		System.out.println(currela.toString());
 		
 		System.out.println(currela.saldo());
+		
+		
 	}
 
+	
 }

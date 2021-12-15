@@ -33,17 +33,24 @@ public class Cuenta {
 		nCuentas++;
 	}
 
-	//constructroes con parámetros
+	//constructores con parámetros
 	Cuenta(float n){
+		titular = "";
+		saldo = n;
+		nCuentas++;
 		
 	}
 	
 	Cuenta(String nombre){
-		
+		titular = "nombre";
+		saldo = 0;
+		nCuentas++;
 	}
 	
 	Cuenta(String nombre,float n){
-		
+		titular = "nombre";
+		saldo = n;
+		nCuentas++;
 	}
 	
 	//métodos del propio enunciado
