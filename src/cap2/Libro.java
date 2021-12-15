@@ -14,7 +14,7 @@ public class Libro {
 		ejemplares=0;
 	}
 	
-	libro ()
+	Libro ()
 	
 	public int añadir() {
 		ejemplares++;
