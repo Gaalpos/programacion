@@ -9,7 +9,7 @@ public class ejercicio2 {
 	public static void main(String[] args) {
 		Scanner lector = new Scanner(System.in);
 
-		int[] array = new int[4];
+		int[] array = new int[5];
 
 		System.out.print("Escribe diferentes valores enteros.");
 		System.out.println("Después del último valor escribe un" + MARCA_FI);
@@ -22,7 +22,7 @@ public class ejercicio2 {
 		
 		while (!fin) {
 			// Antes de leer, comprobamos si realmente hay un entero.
-			if (lector.hasNextInt()) {
+			if (lector.hasNextInt()    ) {
 				int valor = lector.nextInt();
 				// Es la marca de fin?
 
