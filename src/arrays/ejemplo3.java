@@ -31,6 +31,5 @@ public class ejemplo3 {
 
 		// mostrar
 		System.out.println(Arrays.toString(impares));
-		System.out.println("hola");
 	}
 }
