@@ -11,6 +11,9 @@ public class ejercicio4 {
 	public static void main(String[] args) {
 		// No se sabe cuántos entrarán. Hay que acotar un valor máximo. Ponemos 80.
 		float nota=0;
+		
+		boolean semaforo =false;
+		
 		float[] notas = new float[MAX_VALORES];
 
 		// Hay un contador de posiciones actuales en que hay valores.
