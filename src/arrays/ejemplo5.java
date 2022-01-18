@@ -16,7 +16,7 @@ public class ejemplo5 {
 		acumulado = acumulado + arrayNotas[i];
 		}
 		float resultado = acumulado/arrayNotas.length;
-		System.out.println("El resultado es " + resultado);
+		System.out.println(" El resultado es " + resultado);
 		
 	}
 
