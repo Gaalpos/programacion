@@ -7,12 +7,19 @@ public class reto1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		it cont=0;
-		int []pares=new int[100];
-		pares[0] = 0;
-		for (int i=0;i<pares.length;i++) {
-			pares[i] = pares [i]+ 2;
+		int cont = 0;
+		int i = 0;
+		int[] pares = new int[100];
+
+		while (i < 100) {
+			if (cont % 2 == 0) {
+				pares[i] = cont;
+				i++;
+			}
+
+			cont++;
 		}
+
 		System.out.println(Arrays.toString(pares));
 	}
 
