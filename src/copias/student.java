@@ -1,10 +1,22 @@
 package copias;
 
-public class student {
+class Student { 
+    private int number; 
+ 
+    public int getNumber() { 
+        return number; 
+    } 
+ 
+    public void setNumber(int number) { 
+        this.number = number; 
+    }
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	@Override
+	public String toString() {
+		return "Student [number=" + number + "]";
+	} 
+    
+    
+     
+} 
 
-	}
-
-}
