@@ -19,7 +19,6 @@ public class duplicar {
 		}
 		
 		//TRES
-		
 		System.out.println("El original");
 		System.out.println(Arrays.toString(notas));
 		System.out.println("Este es el duplicado:");
