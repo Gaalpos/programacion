@@ -1,11 +1,14 @@
 package cap2;
 
+import java.util.Scanner;
+
 public class Libro {
 	
 	private String titulo;
 	private String autor;
 	private int ejemplares;
 	private int prestados;
+	Scanner sc=new Scanner(System.in);
 	
 	//constructor por defecto
 	Libro(){
@@ -14,10 +17,19 @@ public class Libro {
 		ejemplares=0;
 	}
 	
-	Libro ()
+	//constructores con parámetros
 	
-	public int añadir() {
-		ejemplares++;
+	Libro(String t, String a, int e, int p){
+		titulo =t;
+		autor=a;
+		ejemplares=e;
+		prestados=p;
+	}
+	
+	public int añadir(int n ){
+		int a;
+		System.out.println("Cuantos queire añadir");
+		a=sc.nextInt();
 		return ejemplares;
 		
 	}
