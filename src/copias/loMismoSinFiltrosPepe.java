@@ -2,7 +2,7 @@ package copias;
 
 import java.util.Scanner;
 
-public class loMismoSinFiltros {
+public class loMismoSinFiltrosPepe {
 
 	public static final int INICIAL = 5;
 	public static final int INCREMENTO = 3;
@@ -26,10 +26,8 @@ public class loMismoSinFiltros {
 		boolean fin = false;
 		while (!fin) {
 			float nota = lector.nextFloat();
-			
-			
-			//AMPLIO Y NO CORTO
-			if (elementos == notas.length && nota != -1 ) {
+			//AMPLIO RECOJO Y NO CORTO
+			if (elementos == notas.length && nota!=-1) {
 				// Paso 1 Hay que cambiar el tamaño del array.
 				System.out.println("Capacidad superada. Añadimos " + INCREMENTO + " posiciones ...");
 				// Paso 2 Copisr los del completo en el nuevo
@@ -40,19 +38,17 @@ public class loMismoSinFiltros {
 				// Paso 3 REASIGNACION DEL NOMBRE VIEJO AL ARRAY AMPLIADO
 				notas = arrayNuevo;
 				
-				//recogemos
-				notas[elementos] = nota;
-				elementos++;
-				
-				mostrar(notas);
-			   }	
-			else if(elementos != notas.length && !fin) {
 				notas[elementos] = nota;
 				elementos++;
 				mostrar(notas);
-				}//Recogemos nota y no corto
+			}//RECOGEMOS NOTA Y NO CORTO	
+			else if(elementos != notas.length && nota!=-1) {
+				notas[elementos] = nota;
+				elementos++;
+				mostrar(notas);
+				}
 			else {
-				fin =true;
+				fin = true;
 				mostrar(notas);
 				}
 		}//fin while
