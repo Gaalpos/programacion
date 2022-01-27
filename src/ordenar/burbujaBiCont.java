@@ -5,9 +5,26 @@ public class burbujaBiCont {
 	
 	public static int []genera(int size) {
 		
+		int j=0;
+		int ceros=0;
+		int pares=0;
+		int impares=0;
 		int [] alea=new int[size];
 		for(int i=0;i<alea.length;i++) {
 			alea[i]=(int) (Math.random()*10);
+			j=i;
+			if(j==0) {
+				ceros++;
+			}else {
+				if(j%2==0) {
+					pares++;
+				}else {
+					impares++;
+				}
+				System.out.println("Pares: "+pares);
+				System.out.println("Impares: "+impares);
+				System.out.println("Ceros: "+ceros);
+			}
 		}
 		return alea;
 	}
@@ -55,7 +72,7 @@ public class burbujaBiCont {
 	
 	public static void main(String[] args) {
 		
-		int[] test=genera(100);
+		int[] test=genera(12);
 		mostrar(test);
 		burbujaBi(test);
 		mostrar(test);
