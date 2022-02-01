@@ -25,9 +25,7 @@ public class rellenaArrayMD {
 			System.out.println(Arrays.deepToString(array));
 			Arrays.fill(row,10);
 		}
-			
-		
-		
+
 		System.out.println(Arrays.deepToString(array));
 		
 	}
