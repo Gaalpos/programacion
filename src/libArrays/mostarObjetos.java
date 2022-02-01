@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class mostarObjetos {
 	public static void main(String[] args) {
 		
-		Student []array = { new Student (111, "bbb", "London"),
+		Student []array = {
+				new Student (111, "bbb", "London"),
 				new Student (131, "aaa", "New York"),
-				new Student (194, "ccc", "Vigo")};
+				new Student (124, "ccc", "Vigo")};
 		
 		System.out.println(Arrays.toString(array));
 		
