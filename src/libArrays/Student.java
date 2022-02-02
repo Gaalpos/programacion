@@ -33,4 +33,42 @@ public class Student implements Comparable<Student> {
 		else
 			return 1;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + rollno;
+		return result;
+	}
+
+	
+	//OJOOOO
+	//MUY SIMPLIFICADO
+	@Override
+	public boolean equals(Object obj) {
+	
+		Student other = (Student) obj;
+		
+		if (!address.equals(other.address))
+			return false;
+		
+		if (!name.equals(other.name))
+			return false;
+		
+		if (rollno != other.rollno)
+			return false;
+		
+		return true;
+	}
+	
+	/*
+	 * OTRA OPCION MAS FACIL
+	 * 
+	 * 
+	 */
+	
+	
 }

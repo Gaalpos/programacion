@@ -24,5 +24,10 @@ public class mostrarEstudiantesOrdenados {
 	Arrays.sort(array, new ordenaRoll());
 	System.out.println("\n Sorted by rollno");
 	System.out.println(Arrays.toString(array));
+	
+	
+	for(Student generico:array) {
+		System.out.println(generico.toString());
+	}
 	}
 }
