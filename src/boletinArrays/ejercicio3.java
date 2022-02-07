@@ -4,7 +4,7 @@ public class ejercicio3 {
 
 	public static void main(String[] args) {
 
-		int[] array = { 1, 3, 0, -5, 2, 0, -4 - 7 };
+		int[] array = { 1, 3, 0, -5, 2, 0, -4, - 7,11,-2 };
 		int ceros = 0, pos = 0, neg = 0;
 		int sumapos = 0, sumaneg = 0;
 
