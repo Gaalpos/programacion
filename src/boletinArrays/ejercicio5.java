@@ -1,7 +1,5 @@
 package boletinArrays;
 
-import java.lang.reflect.Array;
-
 /*
  * Leer por teclado dos tablas de 10 números enteros y
 mezclarlas en una tercera de la forma: el 1o de A, el 1o de
@@ -18,7 +16,7 @@ public class ejercicio5 {
 		int doble=arrayB.length*3;
 		int [] mezcla = new int [doble];
 		*/
-		int triple=arrayB.length*2;
+		int triple=arrayB.length*3;
 		int [] mezcla = new int [triple];
 		/*mezclar*/
 		for (int i=0, j=0; i<arrayA.length; i++, j=j+2) {
