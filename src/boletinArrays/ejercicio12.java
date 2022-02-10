@@ -26,9 +26,11 @@ public class ejercicio12 {
 		
 		
 		//quitar posicion
-		for(int i=0;i<indice;i++) {
-			
+		for(int i=indice;i<array.length-1;i++) {
+			array[i]=array[i+1];
 		}
+		System.out.println(Arrays.toString(array));
+		array[array.length-1]=0;
+	System.out.println(Arrays.toString(array));
 	}
-
 }
