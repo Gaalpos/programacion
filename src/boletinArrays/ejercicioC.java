@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //moverDerecha
-public class ejercicioB {
+public class ejercicioC {
 	
 	public static int [] moverDerecha(int[]array) {
 		int aux =0;
@@ -13,6 +13,20 @@ public class ejercicioB {
 			array[i] = array[i-1];
 		}
 		array[0]=aux;
+		return array;
+	}
+	
+	
+	public static int[]moverIzquierda(int[]array){
+		
+		int aux =0;
+		
+		aux=array[0];
+		
+		for (int i = 0; i<array.length-1; i++) {
+			array[i] = array[i+1];
+		}
+		array[array.length-1]=aux;
 		return array;
 	}
 	
@@ -27,10 +41,11 @@ public class ejercicioB {
 		System.out.println("Cuantas veces quieres mover? ");
 		veces=sc.nextInt();
 		for (int i= 0;i<veces;i++) {
-			moverDerecha(array);
+			moverIzquierda(array);
 			System.out.println(Arrays.toString(array));
 		}
 		System.out.println("Array movido "+veces+ " veces:");
 		System.out.println(Arrays.toString(array));
 	}
 }
+
