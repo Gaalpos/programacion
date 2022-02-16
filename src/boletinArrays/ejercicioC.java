@@ -46,6 +46,7 @@ public class ejercicioC {
 		}
 		System.out.println("Array movido "+veces+ " veces:");
 		System.out.println(Arrays.toString(array));
+		sc.close();
 	}
 }
 
