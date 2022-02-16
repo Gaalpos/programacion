@@ -24,7 +24,7 @@ public class ejercicioSuelto {
 				numMay++;
 			}
 		}
-		System.out.println("numero de A: " + numMay);
+		System.out.println("numero  de A: " + numMay);
 		System.out.println("numero de A: " + numMin);
 	}
 }
