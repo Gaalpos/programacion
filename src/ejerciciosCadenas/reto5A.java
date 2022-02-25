@@ -9,7 +9,7 @@ antes deberá ir averiguando las posiciones donde hay espacios en
 blanco para poder delimitar dónde empieza y termina cada palabra.
 
  */
-public class reto5 {
+public class reto5A {
 
 	public static void main(String[] args) {
 		
@@ -18,16 +18,14 @@ public class reto5 {
 		
 		System.out.println("Introduce una cadena a trocear");
 		String texto=sc.nextLine();
+	
+		String[] palabras =texto.split(" ");
+		String invPalabras=" ";
 		
-		
-		int aux=0;
-		for(int i=0;i<texto.length();i++) {
-			if(texto.charAt(i)==' ') {
-				System.out.println(texto.substring(aux,i));	
-				aux=i+1;
-			}
-			
+		for(String recorre:palabras) {
+			System.out.println(recorre);
+			invPalabras += " "+recorre;
 		}
-		System.out.println(texto.substring(aux, texto.length()));
+		System.out.println(invPalabras);
 	}
 }
