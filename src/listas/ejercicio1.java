@@ -35,7 +35,9 @@ public class ejercicio1 {
 		 System.out.println("mail");
 		 m=new URI(sc.nextLine());
 		 
+		 //creamos un objeto estudiante
 		 est = new Estudiante(n,e,m);
+		 //añadimos a la lista
 		 lista.add(est);
 		} 
 		
