@@ -35,7 +35,7 @@ public class ejercicio2 {
 			lista.add(generaNumero());
 		}
 		
-		System.out.println("tamaño de la lista"+lista.size);
+		System.out.println("tamaño de la lista"+lista.size());
 		
 		/*
 		for(Integer r:lista) {

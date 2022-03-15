@@ -4,6 +4,13 @@ import java.util.Random;
 
 public class palabras {
 
+	public static int 
+	
+	
+	public static int generaSize() {
+		Random r = new Random();
+		return r.nextInt(10)+10;
+	}
 	
 	public static String generaPalabra() {
 		// Los caracteres de interés en un array de char.
