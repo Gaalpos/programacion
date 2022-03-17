@@ -35,7 +35,7 @@ public class palabras1 {
 
 		Random r = new Random();
 		return r.nextInt(5) + 5;
-
+		
 	}
 	
 	public static int tamañoPalabra() {
