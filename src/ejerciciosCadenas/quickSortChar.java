@@ -34,5 +34,4 @@ public class quickSortChar {
 		if (i < right)
 			qs(items, i, right);
 	}
-	
 }

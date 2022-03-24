@@ -18,8 +18,5 @@ public class ejemplo1 {
 		System.out.println(a1.equals(a2));
 		System.out.println(a1.compareTo(a2));
 		System.out.println(a1.compareTo(a3));
-		
-
 	}
-
 }

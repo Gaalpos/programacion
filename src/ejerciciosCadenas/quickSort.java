@@ -47,7 +47,7 @@ public class quickSort {
             // El while se repite hasta que izquierda >= derecha
         }
     }
-     
+ 
 	
 	// Divide y vencerás
     private static void quicksort(int arra[], int izquierda, int derecha) {
