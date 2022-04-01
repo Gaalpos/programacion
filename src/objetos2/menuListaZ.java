@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import java.util.Scanner;
 
-public class menuLista {
+public class menuListaZ {
 	
 	public static void mostrarMenu() {
 		System.out.println("\n\nCOLECCIÓN DE DISCOS");
@@ -158,3 +158,4 @@ public class menuLista {
 	}
 	
 }
+
