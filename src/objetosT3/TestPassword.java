@@ -9,8 +9,9 @@ public class TestPassword {
 		System.out.println(uno.toString());
 		
 		for (int i=0;i<=10;i++) {
-			Password p = new Password(9+i);
-			System.out.println(p.toString());
+			Password p = new Password(10);
+			System.out.println(p.toString()+ " "+p.esFuerte());
+			
 		}
 	}
 }
