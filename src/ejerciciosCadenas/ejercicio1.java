@@ -7,6 +7,8 @@ import java.util.Scanner;
 parámetro.
  */
 public class ejercicio1 {
+	
+
 
 	public static void main(String[] args) {
 
@@ -33,5 +35,7 @@ public class ejercicio1 {
 		else
 			System.out.println("El valor '"+buscar+ "' no está");
 	}
+	
+	
 
 }

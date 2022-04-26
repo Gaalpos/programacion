@@ -1,4 +1,4 @@
-package ejerciciosCadenas;
+	package ejerciciosCadenas;
 
 import java.util.Scanner;
 

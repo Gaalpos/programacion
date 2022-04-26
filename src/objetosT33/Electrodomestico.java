@@ -1,4 +1,4 @@
-package objetosT3;
+package objetosT33;
 
 public class Electrodomestico {
 
