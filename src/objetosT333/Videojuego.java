@@ -37,7 +37,7 @@ public class Videojuego implements Entregable{
 	}
 	public Videojuego(String t, int h, String g,String c) {
 		 titulo=t;
-		 horas=HORAS_DEF;
+		 horas=h;
 		 genero=g;
 		 compañia=c;
 	}
@@ -90,15 +90,15 @@ public class Videojuego implements Entregable{
 		entregado=false;
 	}
 	@Override
-	public boolean isEentregado() {
+	public boolean isEntregado() {
 		// TODO Auto-generated method stub
 		return entregado;
 	}
 	@Override
 	public int compareTo(Object obj) {
 		// TODO Auto-generated method stub
-		Videojuego s = (Videojuego) obj;
-		return this.horas -s.getHoras();
+		Videojuego v = (Videojuego) obj;
+		return this.horas -v.getHoras();
 	}
 	
 }

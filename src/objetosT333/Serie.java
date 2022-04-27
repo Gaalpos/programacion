@@ -102,7 +102,7 @@ public class Serie implements Entregable {
 	}
 
 	@Override
-	public boolean isEentregado() {
+	public boolean isEntregado() {
 		// TODO Auto-generated method stub
 		return entregado;
 	}
