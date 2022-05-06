@@ -19,10 +19,12 @@ public class Entrenador extends Seleccion {
 	
 	
 	public void Concentrarse() {
+		super.Concentrarse();
 		System.out.println("Este es el metodo concentrarse de la superclase Entrenador");
 	}
 
 	public void Viajar() {
+		super.Viajar();
 		System.out.println("Este es el metodo viajar de la superclase Entrenador");
 	}
 	

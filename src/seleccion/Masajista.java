@@ -27,11 +27,13 @@ public class Masajista extends Seleccion{
 
 	
 	public void Concentrarse() {
-		System.out.println("Este es el metodo concentrarse de la superclase Masajista");
+		//super.Concentrarse();
+		System.out.println("Este es el metodo concentrarse de la superclase Masajitsa");
 	}
 
 	public void Viajar() {
-		System.out.println("Este es el metodo viajar de la superclase Masajista");
+		//super.Viajar();
+		System.out.println("Este es el metodo viajar de la superclase Masajitsa");
 	}
 	
 	public void darMasaje() {

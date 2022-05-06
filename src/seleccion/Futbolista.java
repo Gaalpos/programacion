@@ -28,11 +28,13 @@ public class Futbolista extends Seleccion{
 	}
 	
 	public void Concentrarse() {
+		//super.Concentrarse();
 		System.out.println("Este es el metodo concentrarse de la superclase Futbolista");
 	}
 
 	public void Viajar() {
-		System.out.println("Este es el metodo viajare de la superclase Futbolista");
+		//super.Viajar();
+		System.out.println("Este es el metodo viajar de la superclase Futbolista");
 	}
 	
 	public void jugarPartido() {
@@ -42,5 +44,12 @@ public class Futbolista extends Seleccion{
 	public void entrenar() {
 		System.out.println("Futbolista realiza un entreno");
 	}
+
+	@Override
+	public String toString() {
+		return "Futbolista [dorsal=" + dorsal + ", demarcacion=" + demarcacion + "]";
+	}
+	
+	
 	
 }
