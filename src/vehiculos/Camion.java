@@ -66,12 +66,12 @@ public class Camion extends Vehiculo implements Pagable{
 	@Override
 	public float seguro() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 20*super.getPotencia();
 	}
 
 	@Override
 	public float itv() {
 		// TODO Auto-generated method stub
-		return 0;
+		return (100*IVA_DEFECTO)*(4*super.getCilindrada()/100);
 	}
 }

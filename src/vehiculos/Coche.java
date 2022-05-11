@@ -74,21 +74,20 @@ public class Coche extends Vehiculo implements Pagable  {
 	@Override
 	public float impuesto() {
 		// TODO Auto-generated method stub
-		return (super.getCilindrada()/30 + super.getPotencia()*20+ super.getNumRuedas()*20 + getNumP	uertas());
+		return (super.getCilindrada()/30 + super.getPotencia()*20+ super.getNumRuedas()*20 + getNumPuertas());
 	}
 
 	@Override
 	public float seguro() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 15*super.getPotencia();
 	}
 
 	@Override
 	public float itv() {
 		// TODO Auto-generated method stub
-		return 0;
+		return (100*IVA_DEFECTO)*(3*super.getCilindrada()/100);
 	}
-
 	/*
 	 * return (super.getCilindrada()/30 + super.getPotencia()*20+ super.getNumRuedas()*20 + getNumeroDeEjes());
 	 */
