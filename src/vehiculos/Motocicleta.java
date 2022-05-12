@@ -2,32 +2,30 @@ package vehiculos;
 
 import objetosT3.Electrodomestico.Color;
 
-public class Motocicleta extends Vehiculo implements Pagable{
+public class Motocicleta extends Vehiculo implements Pagable {
 
-	
 	private byte NumeroDePlazas;
-	
+
 	Motocicleta() {
-	 super((byte)2);
-	 }
-	
-	 Motocicleta(byte NumeroDePlazas) {
-	 super((byte)2);
-	 setNumeroDePlazas(NumeroDePlazas);
-	 }
-	
-	 Motocicleta(Color color) {
-	 super(color,(byte)2);
-	 }
-	
-	 Motocicleta(Color color, short Cilindrada) {
-	 super(color,(byte)2,Cilindrada);
-	 }
-	
-	 Motocicleta(Color color, short Cilindrada,
-	 short Potencia) {
-	 super(color,(byte)2,Cilindrada,Potencia);
-	 }
+		super((byte) 2);
+	}
+
+	Motocicleta(byte NumeroDePlazas) {
+		super((byte) 2);
+		setNumeroDePlazas(NumeroDePlazas);
+	}
+
+	Motocicleta(Color color) {
+		super(color, (byte) 2);
+	}
+
+	Motocicleta(Color color, short Cilindrada) {
+		super(color, (byte) 2, Cilindrada);
+	}
+
+	Motocicleta(Color color, short Cilindrada, short Potencia) {
+		super(color, (byte) 2, Cilindrada, Potencia);
+	}
 
 	public byte getNumeroDePlazas() {
 		return NumeroDePlazas;
@@ -42,11 +40,11 @@ public class Motocicleta extends Vehiculo implements Pagable{
 		System.out.println(super.toString());
 		return "Motocicleta [NumeroDePlazas=" + NumeroDePlazas + "]";
 	}
-	
-	public  void arrancar() {
+
+	public void arrancar() {
 		System.out.println("arracnamos con licencia especial A");
 	}
-	
+
 	public void rellenarDeposito() {
 		System.out.println("meterle 20 euros");
 	}
@@ -54,6 +52,7 @@ public class Motocicleta extends Vehiculo implements Pagable{
 	public void hacerCaballitos() {
 		System.out.println(" -3 puntos de carnet");
 	}
+
 	public void candar() {
 		System.out.println("poner antirrobo rueda");
 	}
@@ -61,18 +60,18 @@ public class Motocicleta extends Vehiculo implements Pagable{
 	@Override
 	public float impuesto() {
 		// TODO Auto-generated method stub
-		return (super.getCilindrada()/30 +super.getPotencia()*30);
+		return (super.getCilindrada() / 30 + super.getPotencia() * 30);
 	}
 
 	@Override
 	public float seguro() {
 		// TODO Auto-generated method stub
-		return 10*super.getPotencia();
+		return 10 * super.getPotencia();
 	}
 
 	@Override
 	public float itv() {
 		// TODO Auto-generated method stub
-		return (100*IVA_DEFECTO)*(2*super.getCilindrada()/100);
+		return (100 * IVA_DEFECTO) * (2 * super.getCilindrada() / 100);
 	}
 }
