@@ -17,34 +17,41 @@ Los nombres de usuario con sus correspondientes contraseñas deben estar almacena
 
 public class ejercicio6 {
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		Map<String,String>mapa =new HashMap<>();
-		
-		String user="";
-		String pass="";
-		
-		mapa.put("yanki","1312");
-		mapa.put("melon","sandia");
-		mapa.put("jak","2w3r4");
-		
+		Map<String, String> mapa = new HashMap<>();
+		boolean acertar = false;
+		int opc = 0;
+		String user = "";
+		String pass = "";
+
+		mapa.put("yanki", "1312");
+		mapa.put("melon", "sandia");
+		mapa.put("jak", "2w3r4");
+
 		System.out.println("introduce usuario: ");
-		user=sc.nextLine();
-		
-		if(mapa.containsKey(user)) {
+		user = sc.nextLine();
+
+		if (mapa.containsKey(user)) {
 			System.out.println("al menos sabes el usuario");
-			//pedir la contraseña
-			System.out.println("contraseña");
-			pass=sc.nextLine();
-			if(mapa.get(user).equals(pass)) {
-				System.out.println("ACCESO PERMITIDO");
-			}else {
-				System.out.println("ERROR DE CONTRASEÑA");
-			}
-		}else {
+			// pedir la contraseña
+			do {
+				System.out.println("contraseña");
+				pass = sc.nextLine();
+				if (mapa.get(user).equals(pass)) {
+					System.out.println("ACCESO PERMITIDO");
+					acertar=true;
+				} else {
+					System.out.println("ERROR DE CONTRASEÑA");
+					opc++;
+				}
+			} while (opc<3 && !acertar);
+			if(!acertar);
+			System.out.println("te has quedado sin opciones");
+		} else {
 			System.out.println("que usas???");
-			//volver a pedir usuario
-		
+			// volver a pedir usuario
+
 		}
 	}
 
