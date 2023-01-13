@@ -8,6 +8,7 @@ public class ejemplo9 {
         System.out.println(" ");
         System.out.println();
     }
+
     public static void main(String[] args) {
 
         String cad1 = " MAYKA   es mi TIA";
@@ -21,7 +22,7 @@ public class ejemplo9 {
         String cad5 = "hola mundo";
 
         char[] arr = cad5.toCharArray();
-        mostrarArray(arr)
+        mostrarArray(arr);
 
         String nuevo = new String(arr);
 
