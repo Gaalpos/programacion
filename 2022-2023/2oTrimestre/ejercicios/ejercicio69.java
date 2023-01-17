@@ -1,9 +1,20 @@
+import java.security.cert.PKIXCertPathBuilderResult;
 import java.util.Arrays;
+import java.util.Locale.LanguageRange;
+
+import javax.swing.text.AbstractDocument.LeafElement;
 
 /**
  * ejercicio69
  */
 public class ejercicio69 {
+
+    public static int[] factorM(int[] arr, int fact) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = fact;
+        }
+        return arr;
+    }
 
     public static int sumaValores(int[] arr) {
         int suma = 0;
@@ -28,5 +39,6 @@ public class ejercicio69 {
         System.out.println(Arrays.toString(potencias));
         int suma = sumaValores(potencias);
         System.err.println(suma);
+
     }
 }
