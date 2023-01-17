@@ -1,4 +1,4 @@
-package Siete.ejemplos.Ejemplos;
+package Ejemplos;
 
 public class ejemplo13 {
 

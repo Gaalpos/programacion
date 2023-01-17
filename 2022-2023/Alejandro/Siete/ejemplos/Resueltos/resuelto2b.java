@@ -1,4 +1,4 @@
-package Siete.ejemplos.Resueltos;
+package Resueltos;
 
 import java.util.Arrays;
 
