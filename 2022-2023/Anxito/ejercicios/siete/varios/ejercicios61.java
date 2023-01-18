@@ -34,7 +34,7 @@ public class ejercicios61 {
 			arrCh2[j]=(char)(97+j);
 		}
 		System.out.println(Arrays.toString(arrCh2));
-<<<<<<< HEAD
+
 		
 		//opc 5
 		String cadena="";
@@ -77,10 +77,9 @@ public class ejercicios61 {
 	
 	//sumar=arrDig1+arrDig2;
 	
-	}
-}
-=======
-	}
 	
+	}
+
 }
->>>>>>> 9834d6356022b2137650ce6499b60f96d7720912
+	
+
