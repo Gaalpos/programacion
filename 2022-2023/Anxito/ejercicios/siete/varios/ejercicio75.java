@@ -1,11 +1,8 @@
 package varios;
 
-import java.util.Arrays;
-
-public class ejercicio72 {
+public class ejercicio75 {
 	
-	//ejercicio75
-	public static String obtenerCadenaMasLarga(String[] arr) {
+public static String obtenerCadenaMasLarga(String[] arr) {
 		
 		int posicion=0;
 		int maximo=0;
@@ -21,32 +18,6 @@ public class ejercicio72 {
 		}
 	
 	
-	//PRACTICA 72 obtenerLongCadenas 6.13
-	
-public static int[] obtenerLongCadenas(String[] arr) {
-		
-		int [] largos = new int[arr.length];
-		
-		for(int i=0;i<arr.length;i++) {
-			System.out.println("largo de cadena: "+i+" es "+ arr[i].length());
-			largos[i]=arr[i].length();
-		}
-		return largos;
-	}
-	
-
-	public static int obtenerSumaTotal(String[] arr) {
-		
-		int total=0;
-		for(int i=0; i<arr.length;i++) {
-			
-			
-			System.out.println("largo de la cadena: "+i+" es " +arr[i].length());
-			total+=arr[i].length();
-		}
-		return total;
-		
-	}
 	
 	public static void main(String[] args) {
 		
@@ -59,17 +30,11 @@ public static int[] obtenerLongCadenas(String[] arr) {
 				+ "Lorem Ipsum passages, and more recently with desktop publishing "
 				+ "software like Aldus"
 				+ " PageMaker including versions of Lorem Ipsum.";
-
+		
 		String cads[] = parrafo.split(" ");
 		
-		System.out.println("Total de caracteres: "+obtenerSumaTotal(cads));
-		
-		//ejercicio 72  6.13
-		System.out.println(Arrays.toString(obtenerLongCadenas(cads)));
-		
-		//ejercicio 75 6.15
 		System.out.println(obtenerCadenaMasLarga(cads));
+		
 	}
-	
-	
+
 }
