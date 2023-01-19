@@ -1,4 +1,3 @@
-package ejercicios;
 
 /*
  * metodo que recoge un array de enteros y devuelva
