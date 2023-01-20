@@ -6,7 +6,7 @@ public class Gato {
 	String color, raza, sexo;
 	int edad;
 	double peso;
-	// métodos ///////////////////////////////
+	// mï¿½todos ///////////////////////////////
 
 	// constructor
 	Gato(String s) {
@@ -33,11 +33,12 @@ public class Gato {
 	}
 
 	/**
-	 * Hace que el gato coma. A los gatos les gusta el pescado, 
-	 * si le damos otra comida la rechazará.
-	 * * 
+	 * Hace que el gato coma. A los gatos les gusta el pescado,
+	 * si le damos otra comida la rechazarï¿½.
+	 * *
+	 * 
 	 * @param comida
-	 *            la comida que se le ofrece al gato
+	 *               la comida que se le ofrece al gato
 	 */
 	void come(String comida) {
 		if (comida.equals("pescado")) {
@@ -48,10 +49,10 @@ public class Gato {
 	}
 
 	/**
-	 * Pone a pelear dos gatos. Solo se van a pelear dos machos entre sí.
+	 * Pone a pelear dos gatos. Solo se van a pelear dos machos entre sï¿½.
 	 *
 	 * @param contrincante
-	 *            es el gato contra el que pelear
+	 *                     es el gato contra el que pelear
 	 */
 	void peleaCon(Gato contrincante) {
 		if (this.sexo.equals("hembra")) {
@@ -60,7 +61,7 @@ public class Gato {
 			if (contrincante.getSexo().equals("hembra")) {
 				System.out.println("no peleo contra gatitas");
 			} else {
-				System.out.println("ven aquí que te vas a enterar");
+				System.out.println("ven aquï¿½ que te vas a enterar");
 			}
 		}
 	}
