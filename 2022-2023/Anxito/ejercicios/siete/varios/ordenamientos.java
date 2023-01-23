@@ -6,15 +6,41 @@ public class ordenamientos {
 
 	public static void main(String[] args) {
 		
-		int[] arr = {1,2,5,6,7,5,3,5,6,7,8,3,3,5};
+		int[] arr = generaArray();
 		
 		System.out.println(Arrays.toString(arr));
-		
 		//burbuja(arr);
+		
+		try {
+		Thread.sleep(10000);
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		qSort(arr);
 		
 		System.out.println(Arrays.toString(arr));
 	}
+	
+	
+	final static int LLIMITE = 100;
+	final static int POS = 30000;
+	public static int getAleatorio() {
+		return (int) (Math.random()* LLIMITE+1);
+	}
+	
+	
+	public static int[] generaArray() {
+		int[] fuera = new int[POS];
+		
+		for(int i=0; i<fuera.length; i++) {
+			fuera[i] =getAleatorio();
+		}
+		return fuera;
+	}
+	
+	
+	
 	
 	//quickSort
 	public static void qSort(int items[]) {
@@ -71,3 +97,4 @@ public class ordenamientos {
 	}
 	
 }
+
