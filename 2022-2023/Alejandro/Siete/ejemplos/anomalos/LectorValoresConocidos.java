@@ -8,23 +8,36 @@ public class LectorValoresConocidos {
 
 	
 	// Se leerán 10 valores.
-	public static final int NUM_VALORES = 30;
+	public static final int MARCA = -1;
+	public static final int NUM_VALORES = 10;
 
 	public static void main(String[] args) {
 	
 		Scanner lector = new Scanner(System.in);
-		int[] arr= new int[NUM_VALORES];
-		System.out.println("Escribe" + NUM_VALORES + "enteros. Se puede hacer en diferentes líneas.");
+		float[] arr= new float[NUM_VALORES];
+		System.out.println("Escribe " + NUM_VALORES + " flotantes. Se puede hacer en diferentes líneas.");
+		System.out.println("Después del último valor escribe un" + MARCA);
+
 		
 		
 		int numValoresLeidos = 0;
-		while (numValoresLeidos < NUM_VALORES) {
+		boolean marca = false;
+		while (!marca) {
 			// Antes de leer, comprobamos si realmente hay un entero.
-			if (lector.hasNextInt()) {
-				int valor = lector.nextInt();
-				arr[numValoresLeidos]=valor;
+			if (lector.hasNextFloat()) {
+				float valor = lector.nextFloat();
+				if (valor == MARCA) {
+					// Sí lo es.
+					marca = true;
+				}
+				if(valor>=0&&valor<=10){
+					arr[numValoresLeidos]=valor;
 				System.out.println("Valor " + numValoresLeidos + " leído: " + valor);
 				numValoresLeidos++;
+				}
+				else{
+					System.out.println("valor no válido");
+				}
 			} else {
 				lector.next();
 			}
