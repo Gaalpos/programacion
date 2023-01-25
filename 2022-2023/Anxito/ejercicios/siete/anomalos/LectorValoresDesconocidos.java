@@ -11,7 +11,8 @@ public class LectorValoresDesconocidos {
 	public static void main(String[] args) {
 		
 		/*SI LOS ALMACENAMOS EN UN ARRAY DEBEMOS CONTROLAR SU TAMAÑO*/
-		int[] arr= new int[NUM_VALORES];
+		//float
+		float[] arr= new float[NUM_VALORES];
 		
 		Scanner lector = new Scanner(System.in);
 		System.out.println("Escribe hasta " + NUM_VALORES + " enteros.");
@@ -22,16 +23,19 @@ public class LectorValoresDesconocidos {
 		
 		while (!marca && numValoresLeidos < NUM_VALORES) {
 			// Antes de leer, comprobamos si realmente hay un entero.
-			if (lector.hasNextInt()) {
-				int valor = lector.nextInt();
+			if (lector.hasNextFloat()) {
+				float valor = lector.nextFloat();
 				// Es la marca de fin?
 				if (valor == MARCA) {
 					// Sí lo es.
 					marca = true;
-				} else {
+				} else if (valor>=0 && valor<=10)  
+				{
 					arr[numValoresLeidos]=valor;
 					numValoresLeidos++;
 					System.out.println("Valor leído: " + valor);
+				}else{
+					System.out.println("Valor no valido, inserte otro valor ");
 				}
 			} else {
 				// Si el valor no es entero, se lee pero se ignora.

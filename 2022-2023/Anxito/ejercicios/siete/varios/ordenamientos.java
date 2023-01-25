@@ -95,6 +95,10 @@ public class ordenamientos {
 		}
 		
 	}
+
+	public static void insertionsort(int[] numbers) {
+		for(int i=0; i<numbers.length;i++)
+	}
 	
 }
 
