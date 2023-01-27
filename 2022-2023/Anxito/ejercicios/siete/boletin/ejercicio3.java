@@ -11,7 +11,7 @@ public class ejercicio3 {
 	public static void main(String[] args) {
 		 
         Scanner sc = new Scanner(System.in);
-        int[] numeros = new int[10];
+        int[] numeros = new int[5];
         int pos = 0, neg = 0, cero = 0; 
         int i;
        
