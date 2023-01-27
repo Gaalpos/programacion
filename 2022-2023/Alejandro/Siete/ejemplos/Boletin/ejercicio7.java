@@ -9,15 +9,14 @@ public class ejercicio7 {
 
         for (int i = 0; i < arr.length;i++) {
             while(arr[i]<arr[i+1]){
-             arr3[i]=arr[i];
-             j++;
+             
             }
-            else if(j>3&&j<=6){
+            while(j>3&&j<=6){
              arr3[i]=arr2[i];
              j++;
             }
-            else{
-             j=1;
+            if(creciente==false && decreciente==false){
+             desordenados=true;
             }
  
          }
