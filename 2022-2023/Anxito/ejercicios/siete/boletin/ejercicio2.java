@@ -16,7 +16,7 @@ public class ejercicio2 {
 		 }
 		 
 		 System.out.println("Los números son:");
-		 for (int i = 0; i < 5; i++)
+		 for (int i = 4; i >= 0; i--)
 		 System.out.println(1+i);
 		 sc.close();
 		 }
