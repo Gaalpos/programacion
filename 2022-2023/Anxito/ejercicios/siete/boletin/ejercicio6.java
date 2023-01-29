@@ -1,46 +1,30 @@
 package boletin;
 
-// 6. Leer los datos correspondientes a dos tablas de 12 
-// elementos numéricos, y mezclarlos en una tercera de la 
-// forma: 3 de la tabla A, 3 de la B, otros 3 de A, otros 3 de 
+
+// Leer los datos correspondientes a dos tablas de 12
+// elementos numéricos, y mezclarlos en una tercera de la
+// forma: 3 de la tabla A, 3 de la B, otros 3 de A, otros 3 de
 // la B, etc
-
+ 
 public class ejercicio6 {
-    
-    public static void main(String[] args) {
-        int arrayA[] = new int[10];
-        int arrayB[] = new int[10];
-        int arrayC[] = new int[20];
-        int i;
 
-        //Inicializo y muestro A
-        System.out.print("array A: ");
-        for (i = 0; i < arrayA.length; i++) {
-            arrayA[i] = (int) (Math.random() * 100 + 1);
-            System.out.print(arrayA[i] + " ");
-        }
-        System.out.println();
-        
-        //Inicializo y muestro B
-        System.out.print("array B: ");
-        for (i = 0; i < arrayB.length; i++) {
-            arrayB[i] = (int) (Math.random() * 100) + 1;
-            System.out.print(arrayB[i] + " ");
-        }
-        System.out.println();
-        
-        //Ahora voy rellenando C cogiendo las posiciones pares de A y la impares de B
-        for (i = 0; i < arrayC.length / 2; i++) {
-            arrayC[i * 2] = arrayA[i];
-            arrayC[i * 2 + 1] = arrayB[i];
-        }
-        System.out.println();
-        
-        //Por último muestro C
-        System.out.print("array C: ");
-        for (i = 0; i < arrayC.length; i++) {
-            System.out.print(arrayC[i] + " ");
-        }
-    }
+	public static void main(String[] args) {
 
+		int[] arrayA = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+		int[] arrayB = { 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+		int[] junto = new int[24];
+
+		for (int i = 0, j = 0; i < junto.length; i = i + 6, j = j + 3) {
+			junto[i] = arrayA[j];
+			junto[i + 1] = arrayA[j + 1];
+			junto[i + 2] = arrayA[j + 2];
+			junto[i + 3] = arrayB[j];
+			junto[i + 4] = arrayB[j + 1];
+			junto[i + 5] = arrayB[j + 2];
+		}
+		for(int k=0; k<junto.length;k++) {
+			System.out.println(junto[k]);
+		}
+		
+	}
 }
