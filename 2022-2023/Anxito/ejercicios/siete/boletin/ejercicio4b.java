@@ -9,17 +9,30 @@ penúltimo, el tercero, etc. */
 public class ejercicio4b {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int numero[] = new int[10];
-        for(int i=0; i <11;i++ ) {
-            System.out.println("Introduzca un numero:");
-            numero[i] = sc.nextInt();
-        }
-
-        System.out.println("El resutlado es: ");
-        for(int i=0;i<=5; i++) {
-            
-        }
-    }
-    
-}
+		
+		int tamaño=0;
+		Scanner sc = new Scanner(System.in); 
+		System.out.println("introduce tamaño del array");
+		tamaño=sc.nextInt();
+		int mitad=0;
+		int[] arr = new int[tamaño];
+		
+		for(int i=0; i<arr.length;i++) {
+			System.out.println("ingresa numero: "+i);
+			arr[i]=sc.nextInt();
+		}
+		
+		
+		mitad=tamaño/2;
+		
+		
+		
+			for(int i=0; i<mitad;i++) {
+					System.out.print(arr[i] + " ");
+					System.out.print(arr[tamaño-1-i]+  " ");
+				}
+			if(tamaño%2!=0)		
+				System.out.println(arr[mitad]);
+		}
+		
+	}
