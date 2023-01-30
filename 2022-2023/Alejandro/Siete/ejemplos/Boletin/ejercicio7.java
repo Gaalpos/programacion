@@ -1,34 +1,35 @@
 package Boletin;
 
+import java.util.Scanner;
+
 public class ejercicio7 {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-<<<<<<< HEAD
-        int i = 0;
-=======
->>>>>>> d91e5200f79659e081e88cd31a959a5f409d6a21
-        boolean creciente = false;
-        boolean decreciente = false;
-        boolean desordenados = false;
+        Scanner sc = new Scanner(System.in);
 
-<<<<<<< HEAD
-        while (arr[i] > arr[i + 1]) {
-            i++;
+        int[] arr = new int[10];
+        int creciente = 0;
+        int decreciente = 0;
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Introduce un numero para array: ");
+            arr[i] = sc.nextInt();
+
         }
-=======
-        for (int i = 0; i < arr.length;i++) {
-            while(arr[i]<arr[i+1]){
-             
+        int i;
+        for (i = 0; i < arr.length - 1; i++) {
+            if (arr[i] < arr[i + 1]) {
+                creciente++;
             }
-            while(j>3&&j<=6){
-             arr3[i]=arr2[i];
-             j++;
+            if (arr[i] > arr[i + 1]) {
+                decreciente++;
             }
-            if(creciente==false && decreciente==false){
-             desordenados=true;
-            }
- 
-         }
->>>>>>> d91e5200f79659e081e88cd31a959a5f409d6a21
+
+        }
+        if (creciente == i) {
+            System.out.println("Es creciente");
+        } else if (decreciente == i) {
+            System.out.println("Es decreciente");
+        } else {
+            System.out.println("Es desordenado");
+        }
     }
 }
