@@ -4,12 +4,21 @@ import java.util.Arrays;
 
 public class ordenamientos {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d91e5200f79659e081e88cd31a959a5f409d6a21
 	public static void main(String[] args) {
 
 		int[] arr = { 1, 2, 5, 6, 7, 5, 3, 5, 6, 7, 8, 3, 3, 5 };
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 511c6ce70a0c87db3e6cf82c02a8cac0a063cf70
+>>>>>>> d91e5200f79659e081e88cd31a959a5f409d6a21
    public static void main(String[] args) {
     
     int[] arr={1,2,5,6,7,8,2,3,4,5,6,7,8,9,2,3,4,6,0};
