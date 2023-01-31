@@ -1,7 +1,7 @@
 package boletinArrays;
 
 /*
- * Leer por teclado dos tablas de 10 números enteros y
+ * Leer por teclado dos tablas de 10 nï¿½meros enteros y
 mezclarlas en una tercera de la forma: el 1o de A, el 1o de
 B, el 2o de A, el 2o de B, etc.
  */
@@ -28,6 +28,5 @@ public class ejercicio5 {
 		for(int k=0; k<mezcla.length;k++) {
 			System.out.println(mezcla[k]);
 		}
-		
 	}
 }
