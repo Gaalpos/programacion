@@ -2,10 +2,9 @@
 
 import java.util.Scanner;
 
-public class ejercicio1 {
+public class ejercicio2 {
     /*
-     * 1. Leer 5 números y mostrarlos en el mismo orden
-     * introducido.
+     * 2. Leer 5 números y mostrarlos en orden inverso al introducido.
      */
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -18,9 +17,9 @@ public class ejercicio1 {
             numeritos[i]=n;
         }
        
-        for(int i=0;i<numeritos.length;i++ ){
-            System.out.println("Numerito posicion :"+i+ ": "+ numeritos[i]);
-        
+        for(int i = numeritos.length-1; i >=0; i-- ){
+            System.out.println("Numero en posicion "+i+ " : "+numeritos[i]);
+
         }
        sc.close();
     }

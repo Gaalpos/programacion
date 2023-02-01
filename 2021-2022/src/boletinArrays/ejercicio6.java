@@ -2,7 +2,7 @@ package boletinArrays;
 
 /*
  * Leer los datos correspondientes a dos tablas de 12
-elementos numéricos, y mezclarlos en una tercera de la
+elementos numï¿½ricos, y mezclarlos en una tercera de la
 forma: 3 de la tabla A, 3 de la B, otros 3 de A, otros 3 de
 la B, etc
  */
