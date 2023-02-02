@@ -58,6 +58,21 @@ public class ordenamientos {
 
 	}
 
+	public static void insertionsort(float[] numbers) {
+		for(int i=0; i<numbers.length;i++) {
+			float valor = numbers[i];
+			int j=i;
+			while(j> 0 && valor <numbers[j-1]) {
+				//HACIENDO SITIO PARA INSERTAR
+				numbers[j] = numbers[j-1];
+				j--; 
+		
+			}
+			//INSERTAMOS
+			numbers[j] = valor;
+		}
+		}
+
 	// bubble sort
 
 	public static void burbuja(int[] arr) {
@@ -77,4 +92,6 @@ public class ordenamientos {
 		}
 
 	}
+
+	
 }
