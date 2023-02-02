@@ -7,7 +7,7 @@ public class ejercicio4 {
         int maximo=arr.length-1;
         int uno=arr[0],dos=arr[maximo];
         
-        for(int i=0;i<maximo/2;i++){
+        for(int i=0;i<arr.length/2;i++){
             System.out.println(arr[i]);
             System.out.println(arr[maximo-i]);
         

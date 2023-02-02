@@ -1,7 +1,6 @@
-package Siete.ejemplos.Ejemplos;
+package Ejemplos;
 
 public class ejemplo2 {
-
     public static void mostrarArray(byte[] arr) {
         byte[] temperaturas = arr;
         for (int j = 0; j < temperaturas.length; j++) {
@@ -13,7 +12,7 @@ public class ejemplo2 {
         System.out.println();
     }
 
-    public static 
+    
 
 
     public static void main(String[] args) {
@@ -69,8 +68,10 @@ public class ejemplo2 {
         //Vamos a cambiar un valor individual en temp3
         temperaturas3[4]=-15;
 
-        System.out.println("temperaturas 1")
-        System.out.println(mostrarArray(temperaturas1););
+        System.out.println("temperaturas 1");
+        System.out.println(mostrarArray(temperaturas1));
     }
 
 }
+
+
