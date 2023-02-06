@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch palindromo",
             "request": "launch",
+            "mainClass": "resueltos.palindromo",
+            "projectName": "siete_eb87937c"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromo",
+            "request": "launch",
             "mainClass": "cadenas.palindromo",
             "projectName": "siete_8e146772"
         },
