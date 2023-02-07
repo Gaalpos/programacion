@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ejercicio4A",
+            "request": "launch",
+            "mainClass": "ejerciciosExamen.ejercicio4A",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch CuentaCaracteres",
+            "request": "launch",
+            "mainClass": "cadenas.CuentaCaracteres",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromoClase",
+            "request": "launch",
+            "mainClass": "resueltos.palindromoClase",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromo",
+            "request": "launch",
+            "mainClass": "resueltos.palindromo",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromo2",
+            "request": "launch",
+            "mainClass": "resueltos.palindromo2",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
             "name": "Launch palindromo",
             "request": "launch",
             "mainClass": "resueltos.palindromo",
