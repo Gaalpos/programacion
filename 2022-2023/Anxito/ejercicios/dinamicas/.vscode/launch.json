@@ -1,0 +1,553 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ejemplo1",
+            "request": "launch",
+            "mainClass": "dinamico.ejemplo1",
+            "projectName": "dinamicas_221ad5b3"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio4Abien",
+            "request": "launch",
+            "mainClass": "ejerciciosExamen.ejercicio4Abien",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio4A",
+            "request": "launch",
+            "mainClass": "ejerciciosExamen.ejercicio4A",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch CuentaCaracteres",
+            "request": "launch",
+            "mainClass": "cadenas.CuentaCaracteres",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromoClase",
+            "request": "launch",
+            "mainClass": "resueltos.palindromoClase",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromo",
+            "request": "launch",
+            "mainClass": "resueltos.palindromo",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromo2",
+            "request": "launch",
+            "mainClass": "resueltos.palindromo2",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromo",
+            "request": "launch",
+            "mainClass": "resueltos.palindromo",
+            "projectName": "siete_eb87937c"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromo",
+            "request": "launch",
+            "mainClass": "cadenas.palindromo",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch resuelto8",
+            "request": "launch",
+            "mainClass": "resueltos.resuelto8",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch LectorSecuencia",
+            "request": "launch",
+            "mainClass": "anomalos.LectorSecuencia",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch LectorValoresConocidos",
+            "request": "launch",
+            "mainClass": "anomalos.LectorValoresConocidos",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch LectorValoresDesconocidos",
+            "request": "launch",
+            "mainClass": "anomalos.LectorValoresDesconocidos",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProcedimientosInicializar",
+            "request": "launch",
+            "mainClass": "anomalos.ProcedimientosInicializar",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch vacasNarayana",
+            "request": "launch",
+            "mainClass": "anomalos.vacasNarayana",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch vacasNarayana2",
+            "request": "launch",
+            "mainClass": "anomalos.vacasNarayana2",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio1",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio1",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio10",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio10",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio11",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio11",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio12",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio12",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio13",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio13",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio14",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio14",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio15",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio15",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio2",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio2",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio2b",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio2b",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio3",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio3",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio4",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio4",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio4b",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio4b",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio5",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio5",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio5b",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio5b",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio6",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio6",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio7",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio7",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio8",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio8",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio9",
+            "request": "launch",
+            "mainClass": "boletin.ejercicio9",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch AdivinaPalabra",
+            "request": "launch",
+            "mainClass": "cadenas.AdivinaPalabra",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuscaCaracter",
+            "request": "launch",
+            "mainClass": "cadenas.BuscaCaracter",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContarCaracteres",
+            "request": "launch",
+            "mainClass": "cadenas.ContarCaracteres",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExtraerPalabras",
+            "request": "launch",
+            "mainClass": "cadenas.ExtraerPalabras",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch InvertirOrden",
+            "request": "launch",
+            "mainClass": "cadenas.InvertirOrden",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch LecturaFrase",
+            "request": "launch",
+            "mainClass": "cadenas.LecturaFrase",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch LecturaPalabras",
+            "request": "launch",
+            "mainClass": "cadenas.LecturaPalabras",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio1(1)",
+            "request": "launch",
+            "mainClass": "cadenas.ejercicio1",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch reto4",
+            "request": "launch",
+            "mainClass": "cadenas.reto4",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch reto5",
+            "request": "launch",
+            "mainClass": "cadenas.reto5",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch reto6",
+            "request": "launch",
+            "mainClass": "cadenas.reto6",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo1",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo1",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo10",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo10",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo11",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo11",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo12",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo12",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo13",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo13",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo14",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo14",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo2",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo2",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo3",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo3",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo4",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo4",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo5",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo5",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo6",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo6",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo7",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo7",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo8",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo8",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo9",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemplo9",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemploArraysStrings",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemploArraysStrings",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemploY",
+            "request": "launch",
+            "mainClass": "ejemplos.ejemploY",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch resuelto2b",
+            "request": "launch",
+            "mainClass": "resueltos.resuelto2b",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch resuelto7",
+            "request": "launch",
+            "mainClass": "resueltos.resuelto7",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch reuselto2",
+            "request": "launch",
+            "mainClass": "resueltos.reuselto2",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio64",
+            "request": "launch",
+            "mainClass": "varios.ejercicio64",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio65",
+            "request": "launch",
+            "mainClass": "varios.ejercicio65",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio69",
+            "request": "launch",
+            "mainClass": "varios.ejercicio69",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio71",
+            "request": "launch",
+            "mainClass": "varios.ejercicio71",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio72",
+            "request": "launch",
+            "mainClass": "varios.ejercicio72",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio75",
+            "request": "launch",
+            "mainClass": "varios.ejercicio75",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio76",
+            "request": "launch",
+            "mainClass": "varios.ejercicio76",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio77",
+            "request": "launch",
+            "mainClass": "varios.ejercicio77",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio78",
+            "request": "launch",
+            "mainClass": "varios.ejercicio78",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicios61",
+            "request": "launch",
+            "mainClass": "varios.ejercicios61",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicios67",
+            "request": "launch",
+            "mainClass": "varios.ejercicios67",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch ordenamientos",
+            "request": "launch",
+            "mainClass": "varios.ordenamientos",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
+            "name": "Launch varios1",
+            "request": "launch",
+            "mainClass": "varios.varios1",
+            "projectName": "siete_8e146772"
+        }
+    ]
+}
