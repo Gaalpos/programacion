@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ejercicio4Abien",
+            "request": "launch",
+            "mainClass": "ejerciciosExamen.ejercicio4Abien",
+            "projectName": "siete_8e146772"
+        },
+        {
+            "type": "java",
             "name": "Launch ejercicio4A",
             "request": "launch",
             "mainClass": "ejerciciosExamen.ejercicio4A",
