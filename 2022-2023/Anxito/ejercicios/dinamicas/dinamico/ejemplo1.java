@@ -34,7 +34,8 @@ public class ejemplo1 implements Comparator <String>{
         System.out.println(colores);
         colores.remove("blanco");
         System.out.println(colores);
-        colores.sort(c);
+        colores.sort(null);
+        System.out.println(colores);
     
     }
 
