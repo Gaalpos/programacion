@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ejemplo8",
+            "request": "launch",
+            "mainClass": "dinamico.ejemplo8",
+            "projectName": "dinamicas_221ad5b3"
+        },
+        {
+            "type": "java",
             "name": "Launch ejemplo1",
             "request": "launch",
             "mainClass": "dinamico.ejemplo1",
