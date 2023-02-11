@@ -12,7 +12,7 @@ public class ejercicio7 {
 
         for( int i = 0; i<array.length; i++ ){
             if (){
-                
+                System.out.println();
             }
         }
 
