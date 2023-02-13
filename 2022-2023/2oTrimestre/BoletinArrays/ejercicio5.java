@@ -21,8 +21,14 @@ public class ejercicio5 {
 
     
         for(int k=0; k<mezcla.length;k++) {
-			System.out.println(mezcla[k]);
+			System.out.println(mezcla[k]);   
 		}
+
+
+
+    
         sc.close();
+
+        
     }
 }
