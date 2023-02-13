@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(115, 184, 245);
+}
+
+.wrapper{
+    border: 2px solid green;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
