@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ejercicio4A",
+            "request": "launch",
+            "mainClass": "Cadenas.ejercicio4A",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
             "name": "Launch palindromos",
             "request": "launch",
             "mainClass": "Cadenas.palindromos",
