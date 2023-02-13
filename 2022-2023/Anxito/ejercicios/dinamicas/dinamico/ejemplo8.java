@@ -10,8 +10,9 @@ public class ejemplo8 {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Gato> banda = new ArrayList<Gato>(); 
+        Gato dos = new Gato("pepe", "miguel","maria" );
         banda.add(new Gato("Garfield", "naranja", "mestizo")); 
-        banda.add(new Gato("Pepe", "gris", "angora")); 
+        banda.add((dos)); 
         banda.add(new Gato("Mauri", "blanco", "manx")); 
         banda.add(new Gato("Ulises", "marrón", "persa")); 
         banda.add(2,new Gato() ); 
