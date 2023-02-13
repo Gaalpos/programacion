@@ -6,29 +6,36 @@ public class Gato implements Comparable<Gato> {
     private String nombre;
     private String color;
     private String raza;
+    private int edad;
 
     public Gato() {
         nombre = "anonimo";
         color = "";
         raza = "";
+        edad = 0;
     }
 
-    public Gato(String nombre, String color, String raza) {
+    public Gato(String nombre, String color, String raza, int edad) {
         this.nombre = nombre;
         this.color = color;
         this.raza = raza;
+        this.edad = edad;
     }
 
     public String getNombre() {
         return nombre;
     }
 
+    public String getColor() {
+        return color;
+    }
+
     public String getRaza() {
         return raza;
     }
 
-    public String getColor() {
-        return color;
+    public int getEdad() {
+        return edad;
     }
 
     public void setNombre(String nombre) {
@@ -43,13 +50,22 @@ public class Gato implements Comparable<Gato> {
         this.raza = raza;
     }
 
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    @Override
     public String toString() {
-        return "Nombre: " + this.nombre + "\nColor: " + this.color +
-                "\nRaza: " + this.raza;
+        return "Gato [nombre=" + nombre + ", color=" + color + ", raza=" + raza + ", edad=" + edad + "]";
     }
 
     public int compareTo(Gato g) {
-        return (this.nombre).compareTo(g.getNombre());
+        if (this.edad == g.getEdad()) {
+            return (this.nombre).compareTo(g.getNombre());
+        } else {
+            return -(this.edad - g.getEdad());
+
+        }
     }
 
     public boolean equals(Gato g) {
