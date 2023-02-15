@@ -81,14 +81,10 @@ public class ejercicio14 {
         /*	 Leer dos series de 10 enteros, que estarán ordenados crecientemente. Copiar (fusionar) las dos tablas en
              una tercera, de forma que sigan ordenados	*/
             
-            
-            
-            
-            
             public static void main (String[] args){
                 
                 Ordenar2 T = new Ordenar2();
-                T.ordenar2();
+                T.Ordenar2();
                 
             }
             
