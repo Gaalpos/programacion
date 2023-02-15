@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ejemplo13",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo13",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo12",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo12",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo10",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo10",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo9",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo9",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
             "name": "Launch ejercicio4A",
             "request": "launch",
             "mainClass": "Cadenas.ejercicio4A",
