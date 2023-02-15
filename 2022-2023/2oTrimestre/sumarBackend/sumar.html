@@ -18,8 +18,17 @@
         <button id="button" onclick="sumar()"> Sumar</button>
 
         <div id="result">resultado</div>
+
+        <div id="datosBackend"> La suma del backend </div>
     </div>
     <script>
+
+      fetch("http://localhost:3000/hola")
+        .then(datos => datos.json())
+        .then(datos => document.getElementById('datosBackend').innerHTML=datos)
+
+     //  console.log(response)
+
         function sumar() {
             let num1 = document.getElementById('num1').value;
             num1 = parseFloat(num1);
