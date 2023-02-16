@@ -16,6 +16,7 @@ public class ejercicio4 {
         System.out.println("Introduzca numero");
         numero[i] = sc.nextInt();
         }
+        
         System.out.println("El resultado es");
         for(int i=0;i<=4;i++){
         System.out.println(numero[i]);

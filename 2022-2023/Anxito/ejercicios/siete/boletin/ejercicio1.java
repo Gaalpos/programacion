@@ -14,6 +14,7 @@ public class ejercicio1{
 		 System.out.print("Introduzca un número "+(i+1)+" :");
 		 t[i] = sc.nextInt();
 		 }
+		 
 		 System.out.println("Los números son:");
 		 for (int i = 0; i < 5; i++)
 		 System.out.println(t[i]);
