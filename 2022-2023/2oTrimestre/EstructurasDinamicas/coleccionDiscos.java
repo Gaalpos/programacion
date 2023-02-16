@@ -15,7 +15,7 @@ programa hecho con una lista? */
 
 public class coleccionDiscos {
 
-	public static boolean comprobarCodigo(Disco[] discos){
+	public static Disco comprobarCodigo(Disco[] discos){
 
 		Scanner sc = new Scanner (System.in);
 		System.out.println("Introduzca el codigo del disco que quiere modificar/borrar");
