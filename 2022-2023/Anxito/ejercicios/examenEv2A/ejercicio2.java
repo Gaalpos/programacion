@@ -15,7 +15,7 @@ public class ejercicio2 {
 	static int[] negativos;
 
 	static void generaNumeros() {
-		int min = -100; // Set To Your Desired Min Value
+		int min = -100; 
 		int max = 100;
 
 		for (int i = 0; i < array.length; i++) {
