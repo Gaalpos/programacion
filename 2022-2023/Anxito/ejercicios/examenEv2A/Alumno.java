@@ -36,5 +36,6 @@ public class Alumno implements Comparable<Alumno>{
 	
 	public int compareTo(Double nota) {
 		return Duble.valueOf this.nota.compareTo(nota);
+	
 	}
 }
