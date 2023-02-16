@@ -15,19 +15,16 @@ programa hecho con una lista? */
 
 public class coleccionDiscos {
 
-	public static comprobarAlgo(Disco[] discos){
-		Scanner s= new Scanner(System.in);
+	public static Disco comprobarAlgo(Disco[] discos) {
+		Scanner s = new Scanner(System.in);
 		System.out.print("Por favor, introduzca el código del disco que desea borrar/modificar: ");
-					String code = s.nextLine();
+		String code = s.nextLine();
 
-					int i = -1;
-					do {
-						i++;
-					} while (!((discos[i].getCodigo()).equals(code))&& i!=discos.length-1);
-					return true;
+		int i = -1;
+		do {
+			i++;
+		} while (!((discos[i].getCodigo()).equals(code)) && i != discos.length - 1);
 
-					
-					
 	}
 
 	public static void main(String[] args) {
