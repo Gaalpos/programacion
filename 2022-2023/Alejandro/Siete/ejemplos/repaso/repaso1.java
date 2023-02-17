@@ -7,23 +7,19 @@ public class repaso1 {
 
     // bubble sort
 
-    public static void burbuja(int[] arr) {
-
-        int aux;
-
-        for (int i = arr.length; i > 0; i--) {
-            for (int j = 0; j < 1 - 1; j++) {
-
-                // swap
-                if (arr[j] > arr[j + 1]) {
-                    aux = arr[j + 1];
-                    arr[j + 1] = arr[j];
-                    arr[j] = aux;
-                }
-            }
-        }
-
-    }
+    public static void burbuja(int [] Arr) {
+		
+		int aux;  
+		for(int i=Arr.length; i>0; i--) {
+			for(int j=0; j<i-1;j++) {
+				if(Arr[j]>Arr[j+1]) {
+					aux =Arr[j+1];
+					Arr[j+1]=Arr[j];
+					Arr[j]=aux;
+				}
+			}
+		}
+	}
 
     public static int generaNumero() {
         Random r = new Random();
