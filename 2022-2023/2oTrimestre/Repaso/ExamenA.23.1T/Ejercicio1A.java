@@ -16,6 +16,18 @@ clase presentar por pantalla el descuento y el precio final.
 
 public class Ejercicio1A {
 
+    public static void pideTarjetas(){
+        System.out.println("Indique su tarjeta");
+        System.out.println("1 ORO");
+        System.out.println("2 PLATA");
+        System.out.println("3 BRONCE");
+    }
+    public static void pideStar(){
+        System.out.println("Es STAR?");
+        System.out.println("1 SI");
+        System.out.println("2 NO");
+    }
+
 
     public static void main(String[] args) {
     Scanner sc = new Scanner (System.in);
@@ -24,19 +36,14 @@ public class Ejercicio1A {
     System.out.println(" Cantidad a pagar:");
     float amount=sc.nextFloat();
 
-    System.out.println("Indique su tarjeta");
-    System.out.println("1 ORO");
-    System.out.println("2 PLATA");
-    System.out.println("3 BRONCE");
+    pideTarjetas();
     int card = sc.nextInt();
 
     if(card == 1 )  discount = 0.8;
     if(card == 2 ) discount = 0.9;
     if(card == 3  ) discount = 0.95;
 
-    System.out.println("Es STAR?");
-    System.out.println("1 SI");
-    System.out.println("2 NO");
+    pideStar();
     int star=sc.nextInt();
 
     if(star == 1) starDsicount = 0.95;
@@ -44,5 +51,6 @@ public class Ejercicio1A {
     double total = amount * discount * starDsicount; 
     System.out.println("TOTAL A PAGAR: " + (float)total);
     
+    sc.close();
     }
 }
