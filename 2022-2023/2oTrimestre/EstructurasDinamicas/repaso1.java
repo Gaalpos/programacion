@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class repaso4 {
+public class repaso1 {
 
     public static int  generaNuemro(){
 
