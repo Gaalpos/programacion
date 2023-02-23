@@ -8,6 +8,7 @@ import java.util.Arrays;
 
 public class ejercicio7 {
     
+    
     static int averiguaOrden(int array[]) {
         int paresOrdenadosAscendente = 0, paresOrdenadosDescendente = 0, resultado;
 
