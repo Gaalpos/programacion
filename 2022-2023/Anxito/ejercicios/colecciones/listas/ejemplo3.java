@@ -23,6 +23,7 @@ public class ejemplo3 {
         //list.forEach(str-->System.out.println(str));
 
 
+        
         Alumno nuevo = new Alumno("manolo",21);
         listOfString.add(nuevo);
 
