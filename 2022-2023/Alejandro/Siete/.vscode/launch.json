@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ejercicio4a",
+            "request": "launch",
+            "mainClass": "Examen2T.ejercicio4a",
+            "projectName": "Siete_41a0f7e7"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio3a",
+            "request": "launch",
+            "mainClass": "Examen2T.ejercicio3a",
+            "projectName": "Siete_41a0f7e7"
+        },
+        {
+            "type": "java",
+            "name": "repasoej2",
+            "request": "launch",
+            "mainClass": "Examen2T.repasoej2",
+            "projectName": "Siete_41a0f7e7"
+        },
+        {
+            "type": "java",
             "name": "Launch ejemplo13",
             "request": "launch",
             "mainClass": "dinamicas.ejemplo13",

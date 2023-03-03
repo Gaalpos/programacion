@@ -9,7 +9,7 @@ public class ejercicio2a {
         int aux;
         for (int i = Arr.length; i > 0; i--) {
             for (int j = 0; j < i - 1; j++) {
-                if (Arr[j] > Arr[j + 1]) {
+                if (Arr[j] < Arr[j + 1]) {
                     aux = Arr[j + 1];
                     Arr[j + 1] = Arr[j];
                     Arr[j] = aux;
@@ -35,17 +35,36 @@ public class ejercicio2a {
         burbuja(arr2);
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
-        int a = arr1.length - 1;
-        int b = arr2.length - 1;
+        int a = 0;
+        int b = 0;
+
+        // NOTA: Una vez que se haya completado uno de los arrays
+        // ya no debería hacer comparaciones y completaría
+        // con el resto que falta de otros
 
         for (int i = 0; i < 10; i++) {
-            if (arr1[a] >= arr2[b]) {
-                arr3[i] = arr1[a];
-                a--;
 
-            } else {
+            if (a < arr1.length && b < arr2.length) {
+                if (arr1[a] > arr2[b]) {
+                    arr3[i] = arr1[a];
+                    if (a < arr1.length - 1)
+                        a++;
+
+                } else {
+                    arr3[i] = arr2[b];
+                    if (b < arr2.length - 1)
+                        b++;
+
+                }
+            }
+            if (a < arr1.length && b >= arr2.length) {
+                arr3[i] = arr1[a];
+                a++;
+
+            }
+            if (a >= arr1.length && b < arr2.length) {
                 arr3[i] = arr2[b];
-                b--;
+                b++;
 
             }
         }
