@@ -19,43 +19,40 @@ public class repasoej2 {
 	}
 
 
-    public static int[] fusionar(int[]arr1,int[]arr2){
-        int[] arr3 = new int[12];
-        int a = 0;
-        int b = 0;
-
-        for (int i = 0; i < arr3.length; i++) {
-
-            if (a < arr1.length && b < arr2.length) {
-                if (arr1[a] > arr2[b]) {
-                    arr3[i] = arr1[a];
-                    a++;
-                    if (a == arr1.length)
-                        a++;
-
-                } else {
-                    arr3[i] = arr2[b];
-                    if (b == arr2.length)
-                        b++;
-
-                }
-            }
-            if (a < arr1.length && b >= arr2.length) {
-                arr3[i] = arr1[a];
-                a++;
-
-            }
-            if (a >= arr1.length && b < arr2.length) {
-                arr3[i] = arr2[b];
-                b++;
-
-            }
-        }
-
-
-
-        return arr3 ;
-    }
+    public static int[] fusionar(int [] Arr, int [] Arr2){
+		
+		
+		int [] res = new int [Arr.length*2];
+		int cont1=0;
+		int cont2=0;
+		for(int i=0; i<res.length; i++){
+			if(cont1<Arr.length && cont2<Arr2.length) {
+				if(Arr[cont1]>=Arr2[cont2]) {
+					res[i]=Arr[cont1];
+					cont1++;
+					if(cont1==Arr.length) {
+						i++;
+					}
+				}else {
+					res[i]=Arr2[cont2];
+					cont2++;
+					if(cont2==Arr2.length) {
+						i++;
+					}
+				}
+			}
+			
+			if(cont1<Arr.length && cont2>=Arr2.length) {
+				res[i]=Arr[cont1];
+				cont1++;
+			}
+			if(cont2<Arr2.length && cont1>=Arr.length) {
+				res[i]=Arr2[cont2];
+				cont2++;
+			}
+			}
+		return res;
+	}
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr1 = new int[6];
