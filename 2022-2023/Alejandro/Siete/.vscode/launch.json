@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -263,4 +264,292 @@
             "projectName": "Siete_41c4e684"
         }
     ]
+=======
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ejercicio4a",
+            "request": "launch",
+            "mainClass": "Examen2T.ejercicio4a",
+            "projectName": "Siete_41a0f7e7"
+        },
+        {
+            "type": "java",
+            "name": "ejercicio3a",
+            "request": "launch",
+            "mainClass": "Examen2T.ejercicio3a",
+            "projectName": "Siete_41a0f7e7"
+        },
+        {
+            "type": "java",
+            "name": "repasoej2",
+            "request": "launch",
+            "mainClass": "Examen2T.repasoej2",
+            "projectName": "Siete_41a0f7e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo13",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo13",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo12",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo12",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo10",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo10",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo9",
+            "request": "launch",
+            "mainClass": "dinamicas.ejemplo9",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio4A",
+            "request": "launch",
+            "mainClass": "Cadenas.ejercicio4A",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromos",
+            "request": "launch",
+            "mainClass": "Cadenas.palindromos",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch resuelto8",
+            "request": "launch",
+            "mainClass": "Resueltos.resuelto8",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AdivinaPablabra",
+            "request": "launch",
+            "mainClass": "Cadenas.AdivinaPablabra",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuscaCaracter",
+            "request": "launch",
+            "mainClass": "Cadenas.BuscaCaracter",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExtraerPalabras",
+            "request": "launch",
+            "mainClass": "Cadenas.ExtraerPalabras",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch InvertirOrden",
+            "request": "launch",
+            "mainClass": "Cadenas.InvertirOrden",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch LecturaFrase",
+            "request": "launch",
+            "mainClass": "Cadenas.LecturaFrase",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch LecturaPalabras",
+            "request": "launch",
+            "mainClass": "Cadenas.LecturaPalabras",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reto6",
+            "request": "launch",
+            "mainClass": "Cadenas.Reto6",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio1",
+            "request": "launch",
+            "mainClass": "Cadenas.ejercicio1",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch reto4",
+            "request": "launch",
+            "mainClass": "Cadenas.reto4",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo1",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo1",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo10",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo10",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo11",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo11",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo12",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo12",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo13",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo13",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo14",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo14",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo2",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo2",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo3",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo3",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo4",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo4",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo5",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo5",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo6",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo6",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo7",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo7",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo8",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo8",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplo9",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemplo9",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemploArrayStrings",
+            "request": "launch",
+            "mainClass": "Ejemplos.ejemploArrayStrings",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch resuelto2",
+            "request": "launch",
+            "mainClass": "Resueltos.resuelto2",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch resuelto2b",
+            "request": "launch",
+            "mainClass": "Resueltos.resuelto2b",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch resuelto7",
+            "request": "launch",
+            "mainClass": "Resueltos.resuelto7",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio64",
+            "request": "launch",
+            "mainClass": "varios.ejercicio64",
+            "projectName": "Siete_41c4e684"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio65",
+            "request": "launch",
+            "mainClass": "varios.ejercicio65",
+            "projectName": "Siete_41c4e684"
+        }
+    ]
+>>>>>>> 3719236a9f18b0d230e7b9995bd68cbd837bf087
 }
