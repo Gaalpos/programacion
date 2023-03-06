@@ -24,8 +24,12 @@ public class Turismo extends Vehiculo {
 	}
 
 	@Override
-	public String toString() {
-		return "Turismo [puertas=" + puertas + ", marchaAutomatica=" + marchaAutomatica + "]";
+	public String toString() {	
+		return super.toString() +"Turismo [puertas=" + puertas + ", marchaAutomatica=" + marchaAutomatica + "]";
+	}
+
+	public void arranca() {
+		System.out.println("Con esos humos no pasas la ITV");
 	}
 
 	

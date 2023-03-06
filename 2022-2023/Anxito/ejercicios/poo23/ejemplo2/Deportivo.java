@@ -4,9 +4,9 @@ public class Deportivo extends Vehiculo {
 
 	private int cilindrada;
 
-	public Deportivo(String matricula, String marca, String modelo, String color, double tarifa, int cilindrada) {
+	public Deportivo(String matricula, String marca, String modelo, String color, double tarifa, double d) {
 		super(matricula, marca, modelo, color, tarifa);
-		this.cilindrada = cilindrada;
+		this.cilindrada = (int) d;
 	}
 
 	// métodos ‘get’ de la subclase Deportivo
@@ -16,7 +16,12 @@ public class Deportivo extends Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Deportivo [cilindrada=" + cilindrada + "]";
+		return super.toString() + "Deportivo [cilindrada=" + cilindrada + "]";
+	}
+
+	@Override
+	public void arranca() {
+		System.out.println("Que bien suena este motor");
 	}
 
 	

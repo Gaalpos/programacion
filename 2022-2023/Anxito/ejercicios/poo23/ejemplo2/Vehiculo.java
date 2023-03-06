@@ -65,7 +65,9 @@ public class Vehiculo {
                 + ", tarifa=" + tarifa + ", disponible=" + disponible + "]";
     }
 
-    
+    public void arranca() {
+        System.out.println("Arrancando el vehiculo...espere");
+    }
 	
 	
 	
