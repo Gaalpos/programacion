@@ -15,6 +15,10 @@ public class Deportivo extends Vehiculo{
 
 	@Override
 	public String toString() {
-		return "Deportivo [cilindrada=" + cilindrada + "]";
+		return super.toString()+"Deportivo [cilindrada=" + cilindrada + "]";
 	}
+	@Override
+	public void arranca(){
+        System.out.println("que bien suena este motor jesus");
+    }
 }

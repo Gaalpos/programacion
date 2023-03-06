@@ -63,4 +63,8 @@ public class Vehiculo {
         return "Vehiculo [matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", color=" + color
                 + ", tarifa=" + tarifa + ", disponible=" + disponible + "]";
     }
+   
+    public void arranca(){
+        System.out.println("arrancando el vehículo..... espere");
+    }
 }
