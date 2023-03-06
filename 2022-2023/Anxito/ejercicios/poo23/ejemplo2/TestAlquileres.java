@@ -41,13 +41,16 @@ public class TestAlquileres {
             //Ejemplo de downcasting
             Vehiculo miVehiculo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
                 Turismo miNuevoTurismo = (Turismo) miVehiculo;
+                if(miNuevoTurismo instanceof Turismo)
                     System.out.println("turismo: "+miNuevoTurismo);
 
                 //ERROR GRAVE    
                 Deportivo miNuevoDeportivo = (Deportivo) miVehiculo;
+                if(miNuevoDeportivo instanceof Deportivo)
                     System.out.println("deportivo: "+miNuevoDeportivo);
                 //ERROR GRAVE
                 Furgoneta miNuevaFurgoneta = (Furgoneta) miVehiculo;
+                if(miNuevaFurgoneta instanceof Furgoneta)
                     System.out.println("furgoneta: "+miNuevaFurgoneta);
 
 
