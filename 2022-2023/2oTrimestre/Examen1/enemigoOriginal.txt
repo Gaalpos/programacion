@@ -1,0 +1,30 @@
+class Enemigo {
+	String tipoArmadura;
+	float v=100; // vida del enemigo
+	float golpeBase = 40;
+	private boolean muerto = false;
+	enum TipoEnemigo {NORMAL, BOSS, FINAL_BOSS};
+	TipoEnemigo tipoEnemigo;	
+	int durabilidadArmadura;
+	int calidadArmadura;
+
+	
+	
+	float calculapotenciagolpe() {
+		switch(tipoEnemigo) {
+			case NORMAL: return golpeBase * v;
+			case BOSS: return golpeBase * 8 * v;
+			case FINAL_BOSS: return golpeBase * 20 * v;
+			default: return 0;
+		}
+
+	}
+	
+	boolean estaMuerto(){
+		if(muerto) return true;
+		else return false;
+	}
+	
+	
+}
+

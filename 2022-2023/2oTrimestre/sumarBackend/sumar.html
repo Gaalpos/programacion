@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sumar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        Num 1 <input id="num1" type="number">
+
+        Num 2 <input id="num2" type="number">
+
+        <button id="button" onclick="sumar()"> Sumar</button>
+
+        <div id="result">resultado</div>
+
+        <div id="datosBackend"> La suma del backend </div>
+    </div>
+    <script>
+
+      fetch("http://localhost:3000/hola")
+        .then(datos => datos.json())
+        .then(datos => document.getElementById('datosBackend').innerHTML=datos)
+
+     //  console.log(response)
+
+        function sumar() {
+            let num1 = document.getElementById('num1').value;
+            num1 = parseFloat(num1);
+            let num2 = document.getElementById('num2').value;
+            num2 = parseFloat(num2);
+            let result = num1 + num2;
+            result = result.toFixed(2);
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

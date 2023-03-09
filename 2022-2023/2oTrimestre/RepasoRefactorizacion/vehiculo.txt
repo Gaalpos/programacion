@@ -1,0 +1,18 @@
+abstract public class Vehiculo{
+String nombre ;
+float consumo;
+float potencia;
+float peso;
+
+abstract void volar();
+
+
+}
+
+class avion extends Vehiculo{
+void volar(){}
+}
+
+class avioneta extends Vehiculo{
+void volar(){}
+}

@@ -1,3 +1,4 @@
+
 package anomalos;
 import java.util.Scanner;
 
@@ -14,4 +15,14 @@ public class LectorSecuencia {
         }
       }
     }
+
+package anomalos;
+
+public class LectorSecuencia {
+
+    public static void main(String[] args) {
+        
+    }
+
+}
 
