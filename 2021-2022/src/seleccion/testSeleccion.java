@@ -11,9 +11,9 @@ public class testSeleccion {
 		
 		Entrenador delBosque = new Entrenador(1, "Vicente", "Del Bosque", 60, "284EZ89");
 		
-		Futbolista Iniesta = new Futbolista(2, "Andrés","Iniesta",29,6,"Interior Derecho");
+		Futbolista Iniesta = new Futbolista(2, "Andrï¿½s","Iniesta",29,6,"Interior Derecho");
 		
-		Masajista raulMartinez = new Masajista (3, "Raúl","Martinez",41, "Licenciado en fisioterapia", 18);
+		Masajista raulMartinez = new Masajista (3, "Raï¿½l","Martinez",41, "Licenciado en fisioterapia", 18);
 		
 		integrantes.add(delBosque);
 		integrantes.add(Iniesta);
