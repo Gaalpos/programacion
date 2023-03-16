@@ -22,7 +22,11 @@ public class Furgoneta extends Vehiculo{
 
 	@Override
 	public String toString() {
-		return "Furgoneta [carga=" + carga + ", volumen=" + volumen + "]";
+		return super.toString()+"Furgoneta [carga=" + carga + ", volumen=" + volumen + "]";
 	}
+	@Override
+	public void arranca(){
+        System.out.println("calentando inyectores... espere 10 minutos");
+    }
 	
 }

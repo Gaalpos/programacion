@@ -1,11 +1,16 @@
-package poo23;
+package poo23.ejemplo1;
 
+import java.util.ArrayList;
+
+import poo23.ejemplo2.Turismo;
 
 public class TestAlquileres {
+
+    public static ArrayList<Vehiculo> misAlquileres= new ArrayList<Vehiculo>();
     public static void main(String[] args) {
         //Se crea una instancia de la clase vehículo
         Vehiculo vehiculo1= new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco",100.0);
-        Vehiculo vehiculo2= new Vehiculo("2345 JVM", "SEAT", "Leon", "Negro",80.0);
+        Turismo vehiculo2= new Vehiculo("2345 JVM", "SEAT", "Leon", "Negro",80.0);
 
         //Se crea una instancia de la clase cliente
         Cliente cliente1= new Cliente("247802140x", "Juan", "Perez");

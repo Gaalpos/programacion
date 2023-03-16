@@ -1,4 +1,4 @@
-package poo23;
+package poo23.ejemplo1;
 
 public class Cliente {
     private String nif;
@@ -13,6 +13,7 @@ public class Cliente {
 	}
 
     public String getNif() {
+
         return nif;
     }
 

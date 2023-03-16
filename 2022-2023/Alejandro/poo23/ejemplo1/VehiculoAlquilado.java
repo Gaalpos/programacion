@@ -1,4 +1,4 @@
-package poo23;
+package poo23.ejemplo1;
 
 public class VehiculoAlquilado {
     //atributos
