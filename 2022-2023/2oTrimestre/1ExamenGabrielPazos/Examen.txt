@@ -1,0 +1,329 @@
+
+###########
+EJERCICIO 1 DOCUMENTACION
+
+import java.util.ArrayList;
+
+class Ingrediente {
+  private String nombre;
+  private float precio;
+
+  public Ingrediente(String nombre, float precio) {
+      super();
+      this.nombre = nombre;
+      this.precio = precio;
+  }
+
+
+  public String getNombre() {
+      return nombre;
+  }
+
+  public void setNombre(String nombre) {
+      this.nombre = nombre;
+  }
+
+
+  public float getPrecio() {
+      return precio;
+  }
+
+
+  public void setPrecio(float precio) {
+      this.precio = precio;
+  }
+}
+
+
+
+
+/**
+ * Clase para crear una pizza
+ * @author Gaalpos
+ * @version 1.2
+ * Copyright 2023 All rights reserved
+ */
+
+
+public class Pizza {
+
+/**
+ * El precio base de la pizza
+ */
+  final static float PRECIO_BASE = 5;
+
+/**
+ * Un Arraylist de ingredientes
+ */
+  private ArrayList<Ingrediente> listaIngredientes = new ArrayList<Ingrediente>();
+
+
+  /**
+   * 
+   * @return la cantidad de ingredientes de la pizza
+   */
+  public int getCantidadIngredientes() {
+      return listaIngredientes.size();
+  }
+
+/**
+ * Devuelve el precio de la pizza
+ * @return El precio de la pizza
+ */
+  public float getCostePizza() {
+      float coste = PRECIO_BASE;
+      for (Ingrediente i : listaIngredientes) {
+          coste += i.getPrecio();
+      }
+      return coste;
+  }
+
+
+
+/**
+ * Añade un ingrediente a la pizza
+ * @param bola El ingrediente que añadimos
+ */
+  public void addIngrediente(Ingrediente bola) {
+   listaIngredientes.add(bola);
+  }
+
+
+
+/**
+ * Quita un ingrediente de la pizza
+ * @param bola el ingrediente que quitamos
+ */
+  public void quitarIngrediente(Ingrediente bola) {
+   listaIngredientes.remove(bola);
+  }
+
+
+
+/**
+ * Quita todos los ingredientes de la pizza
+ */
+  public void quitarTodosLosIngredientes() {
+   listaIngredientes.clear();
+  }
+
+
+
+/** @return Los ingrediente en una cadena
+ * @deprecated
+ */
+  public String obtenerIngredientesFormatoTexto() {
+      String resultado = "";
+      for (Ingrediente i : listaIngredientes) {
+          resultado += i.getNombre();
+          resultado += "\n";
+      }
+      return resultado;
+  }
+
+
+
+/**
+ * Metodo toString
+ */
+  @Override
+  public String toString() {
+      StringBuilder sb = new StringBuilder();
+      for (Ingrediente i : listaIngredientes) {
+          sb.append(i.getNombre());
+          sb.append("\n");
+      }
+      return sb.toString();
+  }
+
+}
+
+
+##########
+EJERCICIO 2 OPTIMIZAR
+
+# Resumen optimizacion
+1. No hace falta crear variables boolean en *Busca* para indicar si esta o no. Sirve con devolver true si la fruta esta y devolver false si la fruta no esta
+2. No se puede optimizar *HayFrutaRepetida*
+3. En *cuentaFrutasConMinimoLetras* la variable *num*  no hace absolutamente nada, por lo que la podemos eliminar
+4. *mediaCaracteres* no se puede optimizar
+5. *numerosCaracteresDivididoEntreMediaTotal* no se puede optimizar
+
+
+ public class Optimizado {
+    String frutas[] = { "platano", "fresa", "pomelo", "limon", "naranja", "pera" };
+
+    boolean Busca (String frutaABuscar){
+        for (String fruta : frutas) {
+            if (fruta.equals(frutaABuscar)) {
+              return true;
+            }
+        }
+        return false;
+    }
+
+    // Función que determine si hay alguna fruta repetida en la lista
+    public boolean hayFrutaRepetida() {
+        for (int i = 0; i < frutas.length; i++) {
+            for (int j = i + 1; j < frutas.length; j++) {
+                if (frutas[i].equals(frutas[j])) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
+
+
+    /* Este cuenta cuntas frutas hay de como minimo X letras */
+    int cuentaFrutasConMinimoLetras(int minimoLetras) {
+        int contador = 0;
+        for (String fruta : frutas) {
+            if (fruta.length() >= minimoLetras) {
+                contador++;
+            }
+        }
+        return contador;
+    }
+
+
+    /* Calcula la media de caracteres de todas las frutas */
+    // En el ejemplo la media de todos los caracteres es 7+5+6+5+7+4 / 6 = 30.66^
+    float mediaCaracteres() {
+        float suma = 0;
+        for (String frase : frutas) {
+            suma += frase.length();
+        }
+        return suma / frutas.length;
+    }
+
+
+
+    /*
+     * Por cada fruta, devuelve el numero de caracteres de cada fruta dividido por
+     * la media de caracteres totales
+     */
+    // Contamos numero de caracteres de cada fruta = [7+5+6+5+7+4]
+    // Numero total de frutas = 6
+    // Media total de caracteres = 7+5+6+5+7+4 / 6 = 30.66^
+    // Dividimos el numero de caracteres de cada fruta por la media total de
+    // caracteres
+    // [0.22, 1.16, 0.19, 0.16, 0.22, 0.13]
+    float[] numerosCaracteresDivididoEntreMediaTotal() {
+        float[] resultado = new float[frutas.length];
+        for (int i = 0; i < frutas.length; i++) {
+            resultado[i] = frutas[i].length() / mediaCaracteres();
+        }
+        return resultado;
+    }
+
+}
+
+
+####
+EJERCICIO 4 REFACTROIZAR
+
+Resumen REFACTROIZAR
+1. He creado clases separadas para el Hechicero y para el Hechizo.
+2. Cada tipo de hechizo es una clase que hereda de la clase hechizo. Ahora el daño se calcula por hechizo.
+
+public class Hechicero {
+
+    String nombre;
+    static int nivel;
+    static float destreza;
+    float mana;
+    private boolean preparado = true;
+
+    boolean puedeLanzarHechizo() {
+        if (preparado) {
+            if (mana > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public Hechicero(String nombre, int nivel, double d, float mana, boolean preparado) {
+        this.nombre = nombre;
+        Hechicero.nivel = nivel;
+        Hechicero.destreza = (float) d;
+        this.mana = mana;
+        this.preparado = preparado;
+    }
+}
+
+class Transformacion extends Hechizo{
+   
+    String nombre = "Transformacion"; 
+    float danno= Hechicero.nivel * 2 +Hechicero.destreza; 
+
+     public Transformacion(String nombre, String descripcion, float dannobase) {
+        super(nombre, descripcion, dannobase);
+        //TODO Auto-generated constructor stub
+    }
+
+}
+
+class Encantamiento extends Hechizo{
+   
+    String nombre = "Encantamiento"; 
+    float danno= Hechicero.nivel * 2 +Hechicero.destreza; 
+
+    public Encantamiento(String nombre, String descripcion, float dannobase) {
+        super(nombre, descripcion, dannobase);
+        //TODO Auto-generated constructor stub
+    }
+}
+class Embrujo extends Hechizo{
+   
+    String nombre = "Embrujo"; 
+    float danno= Hechicero.nivel * 1 +Hechicero.destreza; 
+
+    public Embrujo(String nombre, String descripcion, float dannobase) {
+        super(nombre, descripcion, dannobase);
+        //TODO Auto-generated constructor stub
+    }
+}
+class Malefico extends Hechizo{
+  
+    String nombre = "malefico"; 
+    float danno= Hechicero.nivel * 2 + Hechicero.destreza;
+    
+    public Malefico(String nombre, String descripcion, float dannobase) {
+        super(nombre, descripcion, dannobase);
+        //TODO Auto-generated constructor stub
+    }
+}
+
+
+
+public class Hechizo {
+
+    String nombre = "default"; 
+    String descripcion; 
+    float Dannobase = 0;
+
+    
+    public Hechizo(String nombre, String descripcion, float dannobase) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        Dannobase = dannobase;
+    }
+ 
+ }
+
+
+ #####
+
+ EJERCICIO 5 COMPLEJIDAD
+
+ HayFrutaRepetida: complejidad lineal O(n)
+
+ puedeLanzarHechizo:  Complejidad logaritmica O(logn)
+ 
