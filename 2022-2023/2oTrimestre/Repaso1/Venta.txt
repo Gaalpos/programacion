@@ -1,0 +1,24 @@
+// Documentar, test, refactorizar, optimizar
+
+public class Venta{
+    float coste;
+    float dto;
+
+    enum TipoCliente{
+        GOLD, PLATINUM, NORMAL
+    };
+
+    boolean esEmpleado;
+    TipoCliente tipoDeCliente;
+    boolean tieneCuponGratis;
+    String NombreEmpleado;
+
+    float calcula_coste_renta(){
+        if(esEmpleado) return 0;
+        else if (tipoDeCliente == TipoCliente.GOLD) return 0;
+        else if (tipoDeCliente == TipoCliente.PLATINUM) return 0;
+        else if (tipoDeCliente == TipoCliente.GOLD) return 0;
+        else if (tieneCuponGratis == true ) return 0;
+        else return coste * dto + coste;
+    }
+}
