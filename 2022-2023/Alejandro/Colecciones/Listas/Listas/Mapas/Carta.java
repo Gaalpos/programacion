@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Carta {
+public class Carta implements Comparable{
     String valor;
     String palo;
     String[] palos= {"bastos","oros","copas","espadas"};
@@ -42,7 +42,7 @@ public class Carta {
         return result;
     }
 
-  /*   @Override
+     @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
@@ -61,13 +61,29 @@ public class Carta {
                 return false;
         } else if (!palo.equals(other.palo))
             return false;
+            //Si son iguales el mismo palo  el mismo valor
         return true;
-    }*/
-    public boolean equals(Object obj){
+    }
+    /*public boolean equals(Object obj){
         Carta other= (Carta) obj;
         if(this.palo.equals(other.getPalo())&& this.valor.equals(other.getValor()))
         return true;
         else return false;
+    }*/
+
+    @Override
+    public int compareTo(Object obj) {
+        // TODO Auto-generated method stub
+        //primero por palo
+        Carta car = (Carta) obj;
+        //Si son distintos ordena por palo
+        if(!this.getPalo().equals(car.getPalo()))
+        return this.getPalo().compareTo(car.getPalo());
+        //Si son del mismo ordena por valor
+        else
+        return this.getValor().compareTo(car.getValor());
+
+        
     }
 
     

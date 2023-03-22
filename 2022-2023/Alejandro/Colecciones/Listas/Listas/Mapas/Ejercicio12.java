@@ -1,12 +1,28 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 
-public class ejercicio8 {
-    /*Ejercicio que elige al azar 5 cartas de la baraja española, pero sin repetir ninguna */
-    static ArrayList<Carta> mano= new ArrayList<Carta>();
+
+public class Ejercicio12 {
+
+    static HashMap<String,Integer> puntaje= new HashMap();
+
+    static void ponPuntosAlMapa(){
+        puntaje.put("As", 11);
+        puntaje.put("Sota", 2);
+        puntaje.put("Caballo", 3);
+        puntaje.put("Rey", 4);
+        puntaje.put("2", 0);
+        puntaje.put("4", 0);
+        puntaje.put("5", 0);
+        puntaje.put("6", 0);
+        puntaje.put("7", 0);
+    }
+
+    static ArrayList<Carta> mano= new ArrayList<>();
     public static void main(String[] args) {
        
+        ponPuntosAlMapa();
             Carta c= new Carta();
             System.out.println(c.toString());
             mano.add(c);
@@ -24,18 +40,17 @@ public class ejercicio8 {
 
         }
 
-       } while (mano.size()<10);
+       } while (mano.size()<5);
 
        System.out.println("mano obtenida sin ordenar");
        for(Carta car: mano){
         System.out.println(car.toString());
        }
 
-       Collections.sort(mano);
-       System.out.println("mano obtenida ordenada");
+       int total=0;
        for(Carta car: mano){
-        System.out.println(car.toString());
+        total+= puntaje.get(car.getValor());
        }
+       System.out.println("Total de la tirada: "+total);
     }
-    
 }
