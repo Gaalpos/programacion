@@ -24,5 +24,5 @@ public class ejemplo1 {
 			System.out.println("este es su valor "+pareja.getValue());
 		}
 	}
-    // ME GUSTAS BEBE, BOOOF Q BAKUGANS
+    
 }

@@ -1,16 +1,15 @@
-<<<<<<< HEAD
+
 package varios;
 
 import java.util.Arrays;
 
 public class ordenamientos {
-<<<<<<< HEAD
+
 	public static void main(String[] args) {
 
 		int[] arr = { 1, 2, 5, 6, 7, 5, 3, 5, 6, 7, 8, 3, 3, 5 };
 
-=======
-<<<<<<< HEAD
+
    public static void main(String[] args) {
     
     int[] arr={1,2,5,6,7,8,2,3,4,5,6,7,8,9,2,3,4,6,0};
@@ -90,7 +89,7 @@ while (i<=j) {
         
     }
 
-=======
+
     public static void main(String[] args) {
 		
 		int[] arr = {1,2,5,6,7,5,3,5,6,7,8,3,3,5};
@@ -218,8 +217,7 @@ while (i<=j) {
 
 	}
 }
->>>>>>> d69950171519c82431de619c7074e825fd601051
-=======
+
 package varios;
 
 import java.util.Arrays;
