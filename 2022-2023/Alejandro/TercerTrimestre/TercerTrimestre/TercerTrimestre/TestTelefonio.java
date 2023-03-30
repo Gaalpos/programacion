@@ -12,7 +12,7 @@ public class TestTelefonio {
         System.out.println(ModeloBarato);
         System.out.println(ModeloBarato.UltimaLlamada());
         ModeloBarato.Llamar("670234590");
-        System.out.println(ModeloBarato);
+        System.out.println(ModeloBarato);   
         ModeloBarato.Llamar("670069423");
         System.out.println(ModeloBarato.Llamada(1));
         
