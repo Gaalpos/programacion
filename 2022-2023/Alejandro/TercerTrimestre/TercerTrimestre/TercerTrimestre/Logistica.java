@@ -1,3 +1,4 @@
+package TercerTrimestre;
 public class Logistica {
     String Nombre;
 private byte Capacidad;

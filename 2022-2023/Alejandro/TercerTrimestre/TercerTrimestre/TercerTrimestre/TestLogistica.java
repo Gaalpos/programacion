@@ -1,3 +1,4 @@
+package TercerTrimestre;
 import java.util.Scanner;
 
 public class TestLogistica {
