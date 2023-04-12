@@ -5,7 +5,7 @@ public class LogisticaCC {
     private byte Capacidad;
     private byte NumeroDeContenedores;
 
-    LogisticaCC(byte Capacidad, String n) {
+    LogisticaCC(Byte Capacidad, String n) {
         this.Capacidad = Capacidad;
         NumeroDeContenedores = 0;
         this.Nombre = n;
@@ -39,7 +39,7 @@ public class LogisticaCC {
 
     @Override
     public String toString() {
-        return "Logistica [Nombre=" + Nombre + ", Capacidad=" + Capacidad + ", NumeroDeHuecos=" + NumeroDeContenedores
+        return "Logistica [Nombre=" + Nombre + ", Capacidad=" + Capacidad + ", NumeroDeCoches=" + NumeroDeContenedores
                 + "]";
     }
 
