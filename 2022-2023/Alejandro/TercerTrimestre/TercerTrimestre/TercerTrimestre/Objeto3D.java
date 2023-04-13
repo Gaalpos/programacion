@@ -1,4 +1,3 @@
-package TercerTrimestre;
 public class Objeto3D {
 private double X = 0d;
 private double Y = 0d;

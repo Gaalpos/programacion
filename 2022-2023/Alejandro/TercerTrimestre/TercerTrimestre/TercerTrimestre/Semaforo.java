@@ -1,4 +1,3 @@
-package TercerTrimestre;
 
 public class Semaforo {
     private String EstadoSemaforo = "Rojo";

@@ -1,4 +1,3 @@
-package TercerTrimestre;
 import java.awt.Color;
 import java.util.Arrays;
 

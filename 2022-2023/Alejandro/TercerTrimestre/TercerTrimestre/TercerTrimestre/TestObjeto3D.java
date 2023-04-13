@@ -1,4 +1,3 @@
-package TercerTrimestre;
 
 public class TestObjeto3D {
     public static void main (String[] args) {

@@ -1,4 +1,3 @@
-package TercerTrimestre;
 
 public class TestTelefono {
     public static void main(String[] args) {
