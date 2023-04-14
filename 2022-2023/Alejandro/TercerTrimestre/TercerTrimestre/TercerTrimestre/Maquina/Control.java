@@ -54,7 +54,7 @@ break;
 
 Maquina.MostrarEstadoMaquina();
 
-} while (Acumulado<Precio || Anulado);
+} while (Acumulado<Precio && !Anulado);
 
 if (Anulado)
 Devolver(Maquina,Acumulado);
