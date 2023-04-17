@@ -1,4 +1,4 @@
-package Capitulo5;
+package Capitulo5.Ejemplo1;
 
 public class Periodico extends Publicacion{
     public String Nombre;
