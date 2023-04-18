@@ -1,7 +1,7 @@
 package Capitulo5.Ejemplo2;
 import java.awt.Color;
 import java.util.Arrays;
-abstract public class Figura {
+abstract public class Figura implements Comparable{
     protected Color ColorFigura;
 protected int[] Posicion = new int[2];
 

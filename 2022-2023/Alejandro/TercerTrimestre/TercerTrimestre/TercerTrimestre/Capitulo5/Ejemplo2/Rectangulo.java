@@ -40,4 +40,17 @@ public String toString() {
 public double calculaArea(){
     return Lados[0]*Lados[1];
 }
+
+@Override
+public int compareTo(Object arg0) {
+    Figura r= (Figura) arg0;
+    if(this.calculaArea()>r.calculaArea())
+    return (int) Math.ceil(this.calculaArea()- r.calculaArea());
+
+    else if(this.calculaArea()==r.calculaArea())
+    return 0;
+
+    else
+    return (int) Math.ceil(r.calculaArea()-this.calculaArea());
+}
 }

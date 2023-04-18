@@ -39,4 +39,17 @@ public double calculaArea(){
     return Math.PI*Math.pow(Radio,2);
 }
 
+@Override
+public int compareTo(Object arg0) {
+    Figura c= (Figura) arg0;
+    if(this.calculaArea()>c.calculaArea())
+    return (int) Math.ceil(this.calculaArea()- c.calculaArea());
+
+    else if(this.calculaArea()==c.calculaArea())
+    return 0;
+
+    else
+    return (int) Math.ceil(c.calculaArea()-this.calculaArea());
+}
+
 }
