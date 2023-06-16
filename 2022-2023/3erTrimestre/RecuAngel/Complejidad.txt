@@ -1,0 +1,11 @@
+  public static void sonar(String morse) {
+        final int FRECUENCIA = 1000;
+        final int VOLUMEN = 100;
+        for (String simbolo : morse.split("")) {
+            int duracion = simbolo.equals(".") ? 100 : 300;
+            generaSonidoAudible(FRECUENCIA, duracion, VOLUMEN);
+        }
+    }
+
+
+Este metodo tiene complejidad logaritmica O(log n)

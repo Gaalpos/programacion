@@ -1,0 +1,388 @@
+EJERCICIO 1
+
+import java.util.Hashtable;
+
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.SourceDataLine;
+
+
+/**
+ * @author Gabriel Pazos
+ * @Copyright todos los derechos reservados 
+ */
+
+
+/**
+ *Programa que convierte una frase a codigo morse y puede emitirlo por los altavoces del ordenador
+ */
+public class LenguajeMorse {
+    private static Hashtable<String, String> equivalencias = new Hashtable<>();
+
+    LenguajeMorse() {
+    }
+
+    /**
+     * 
+     */
+    static {
+        equivalencias.put("A", ".-");
+        equivalencias.put("B", "-...");
+        equivalencias.put("C", "-.-.");
+        equivalencias.put("CH", "----");
+        equivalencias.put("D", "-..");
+        equivalencias.put("E", ".");
+        equivalencias.put("F", "..-.");
+        equivalencias.put("G", "--.");
+        equivalencias.put("H", "....");
+        equivalencias.put("I", "..");
+        equivalencias.put("J", ".---");
+        equivalencias.put("K", "-.-");
+        equivalencias.put("L", ".-..");
+        equivalencias.put("M", "--");
+        equivalencias.put("N", "-.");
+        equivalencias.put("Ñ", "--.--");
+        equivalencias.put("O", "---");
+        equivalencias.put("P", ".--.");
+        equivalencias.put("Q", "--.-");
+        equivalencias.put("R", ".-.");
+        equivalencias.put("S", "...");
+        equivalencias.put("T", "-");
+        equivalencias.put("U", "..-");
+        equivalencias.put("V", "...-");
+        equivalencias.put("W", ".--");
+        equivalencias.put("X", "-..-");
+        equivalencias.put("Y", "-.--");
+        equivalencias.put("Z", "--..");
+        equivalencias.put("0", "-----");
+        equivalencias.put("1", ".----");
+        equivalencias.put("2", "..---");
+        equivalencias.put("3", "...--");
+        equivalencias.put("4", "....-");
+        equivalencias.put("5", ".....");
+        equivalencias.put("6", "-....");
+        equivalencias.put("7", "--...");
+        equivalencias.put("8", "---..");
+        equivalencias.put("9", "----.");
+        equivalencias.put(".", ".-.-.-");
+        equivalencias.put(",", "--..--");
+        equivalencias.put(":", "---...");
+        equivalencias.put("?", "..--..");
+        equivalencias.put("'", ".----.");
+        equivalencias.put("-", "-....-");
+        equivalencias.put("/", "-..-.");
+        equivalencias.put("\"", ".-..-.");
+        equivalencias.put("@", ".--.-.");
+        equivalencias.put("=", "-...-");
+        equivalencias.put("!", "−.−.−−");
+    }
+
+    // Calcula el angulo de una señal sinusoide determinada a partir de sus
+    // componente
+    private static double getAnguloOnda(float frecuencia, int herzios, int tiempo) {
+        return tiempo / (frecuencia / herzios) * 2.0 * Math.PI;
+    }
+
+    // Calcula el angulo de una señal sinusoide determinada a partir de sus
+    // componente
+
+    /**
+     * Calcula el angulo de una señal sinusoide determinada
+     *  a partir de suscomponente
+     * @param periodo el periodo de la señal
+     * @return la frecuencia de la señal
+     */
+    static double calculaFrecuencia(float periodo) {
+        return 1.0 / periodo;
+    }
+
+    // Genera un sonido audible a partir de una frecuencia, duración y volumen
+    private static void generaSonidoAudible(int hz, int msecs, int volume) {
+        float frequency = 44100;
+        byte[] buf;
+        AudioFormat af;
+
+        buf = new byte[1];
+        af = new AudioFormat(frequency, 8, 1, true, false);
+
+        try {
+            SourceDataLine sdl = AudioSystem.getSourceDataLine(af);
+            sdl = AudioSystem.getSourceDataLine(af);
+            sdl.open(af);
+            sdl.start();
+            for (int i = 0; i < msecs * frequency / 1000; i++) {
+                double angle = getAnguloOnda(frequency, hz, i);
+                buf[0] = (byte) (Math.sin(angle) * volume);
+                sdl.write(buf, 0, 1);
+            }
+            sdl.drain();
+            sdl.stop();
+            sdl.close();
+        } catch (LineUnavailableException ex) {
+            System.out.println(ex);
+        }
+    }
+
+   
+    /**
+     * Emite el codigo morse por los altavoces
+     * @param morse la cadena del mensaje a emitir
+     */
+    public static void sonar(String morse) {
+        final int FRECUENCIA = 1000;
+        final int VOLUMEN = 100;
+        for (String simbolo : morse.split("")) {
+            int duracion = simbolo.equals(".") ? 100 : 300;
+            generaSonidoAudible(FRECUENCIA, duracion, VOLUMEN);
+        }
+    }
+
+    // Devuelve la representación en codigo morse (puntos y guiones) de una frase
+    // escrita en codigo ascii
+
+    /**
+     * Transforma la frase que le pasamos a codigo morse
+     * @param ascii la cadena en codigo ascii
+     * @return el mensaje en morse
+     */
+    public static String textoToMorse(String ascii) {
+        String morse = "";
+        for (String caracter : ascii.split("")) {
+            morse += LenguajeMorse.equivalencias.getOrDefault(caracter.toUpperCase(), "");
+        }
+        return morse;
+    }
+
+    /**
+     * Metodo principal de la clase que pinta por consola un frase en morse y 
+     * calcula la frecuencia de la señal 
+     * @param arg parametro principal del metodo main
+     */
+    public static void main(String arg[]) {
+        String simbolosMorse = LenguajeMorse.textoToMorse("hola");
+        System.out.println(simbolosMorse);
+        // sonar(simbolosMorse);
+        System.out.println(LenguajeMorse.calculaFrecuencia(2.4f));
+    }
+}
+
+
+EJERCICIO 2
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class LenguajeMorseTest {
+
+  @Test
+  public void calculaFrecuenciaTest() {
+    LenguajeMorse programa = new LenguajeMorse();
+    float periodo = 2.4f;
+    double frecuencia = programa.calculaFrecuencia(periodo);
+    assertEquals(0.416, frecuencia, 0.1);
+  }
+
+  @Test
+  public void calculaFrecuenciaTestError() {
+    LenguajeMorse programa = new LenguajeMorse();
+    float periodo = 8.4f;
+    double frecuencia = programa.calculaFrecuencia(periodo);
+    assertEquals(0.416, frecuencia, 0.1);
+  }
+
+  @Test
+  public void textoToMorseTest() {
+    LenguajeMorse programa = new LenguajeMorse();
+    // la cadena dice: Hola soy gabriel
+    String ascii2= " hola";
+    String morse = programa.textoToMorse(ascii2);
+    assertEquals("....---.-...-", morse);
+  }
+
+  @Test
+  public void textoToMorseTestError() {
+    LenguajeMorse programa = new LenguajeMorse();
+    // la cadena dice: Hola soy gabriel
+    String ascii2= " hola soy gabriel";
+    String morse = programa.textoToMorse(ascii2);
+    assertEquals("....---.-...-", morse);
+  }
+}
+
+
+
+EJERCICIO 3
+ 
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+public class Optimiza {
+   
+    String nombres[] = {"Pera", "Manzana", "Limón", "Fresa"};
+   
+ 
+    /* Este cuenta cuantos nombres de X caracteres hay. Donde X se pasa como parámetro */
+
+    // ELIMINAMOS LA VARIABLE NUM QUE NO HACE NADA
+    int cuantosDeXCaracteres(int numCaracteres) {
+        int total = 0;
+        for(String nombre: nombres) {
+            if(nombre.length()==numCaracteres) {
+                total++;
+            }   
+        }
+        return total;
+    }
+   
+       
+    /* Este método devuelve un array con la primera letra de cada nombre */
+
+    //NO SE PUEDE OPTIMIZAR
+    String[] arrayConPrimeraLetra() {
+        ArrayList<String> letras = new ArrayList<String>();
+        for(int i=0;i<nombres.length;i++) {
+            letras.add(nombres[i].substring(0,1));
+        }
+        return letras.toArray(new String[letras.size()]);
+    }
+   
+    /*Este método devuelve el nombre con mayor longitud. Si hay varios de la misma longitud, 
+    devuelve el primero que encuentra*/
+
+    //NO SE  PUEDE OPTIMIZAR
+    String elMasLargo() {
+        String mayor = "";
+        for(String nombre: nombres) {
+            if(nombre.length() > mayor.length()) {
+                mayor = nombre;
+            }
+        }
+        return mayor;
+    }
+   
+    /* Este método calcula cual es el nombre mas largo y se lo concatena al 
+    final de cada uno de los nombres*/
+
+    //CALCULAMOS EL NOMBRE FUERA DEL BUCLE PARA NO TENER QUE CALCULARLO SIEMPRE
+    String[] concatenarNombreMasLargo() {
+        String letras[] = new String[nombres.length];
+        String masLargo = elMasLargo();
+        for(int i=0;i<nombres.length;i++) {
+            letras[i] = nombres[i]+"-"+masLargo;
+        }
+        return letras;
+    }
+
+    /* Este método mira si ya está el nombre de la fruta en la lista*/
+
+    // DEVOLVEMOS TRUE OR FALSE EN VEZ DE CREAR UNA VARIBALE BOOLEAN
+    boolean repetido(String buscar){
+        for(String nombre: nombres){
+            if(buscar.equals(nombre)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        new Optimiza();
+    }
+   
+    public Optimiza() {
+        System.out.println("Lista de nombres: "+ Arrays.toString(nombres));
+        System.out.println("Ya está en la lista el nombre Angel:"+ repetido("Angel"));
+        System.out.println("Ya está en la lista el nombre Fresa:"+ repetido("Fresa"));
+        System.out.println("Cuantos nombres de 5 caracteres hay:"+ cuantosDeXCaracteres(5));
+        System.out.println("Obtener la primera letra de cada nombre:"+ Arrays.toString(arrayConPrimeraLetra()));
+        System.out.println("El nombre mas largo es:"+ elMasLargo());
+        System.out.println("La lista de nombres concatenandole el mas largo:"+ Arrays.toString(concatenarNombreMasLargo()));
+    }
+}
+
+
+EJERCICIO 4
+
+  public static void sonar(String morse) {
+        final int FRECUENCIA = 1000;
+        final int VOLUMEN = 100;
+        for (String simbolo : morse.split("")) {
+            int duracion = simbolo.equals(".") ? 100 : 300;
+            generaSonidoAudible(FRECUENCIA, duracion, VOLUMEN);
+        }
+    }
+
+
+Este metodo tiene complejidad logaritmica O(log n)
+
+
+EJERCICIO 5
+
+class ProyectilNormal extends Proyectil{
+
+    public ProyectilNormal(float calibre, float potenciaInicio, int calidad) {
+        super(calibre, potenciaInicio, calidad);
+    }
+
+    public float calculaDamage(){
+        return  potenciaInicio * calibre + calidad;
+    }
+
+}
+class ProyectilIncendiario extends Proyectil{
+
+    public ProyectilIncendiario(float calibre, float potenciaInicio, int calidad) {
+        super(calibre, potenciaInicio, calidad);
+    }
+
+    public float calculaDamage(){
+        return potenciaInicio * 8 * calibre+calidad;
+    }
+    
+}
+class ProyectilPlata extends Proyectil{
+
+    public ProyectilPlata(float calibre, float potenciaInicio, int calidad) {
+        super(calibre, potenciaInicio, calidad);
+    }
+
+    public float calculaDamage(){
+        return potenciaInicio * 20 * calibre+calidad;
+    }
+
+  
+    
+}
+
+
+class Proyectil {
+   
+    float calibre=100; 
+    float potenciaInicio = 40;
+    int calidad = 10;
+    private boolean gastado = false;
+    
+ 
+    public Proyectil(float calibre, float potenciaInicio, int calidad) {
+        this.calibre = calibre;
+        this.potenciaInicio = potenciaInicio;
+        this.calidad = calidad;
+    }
+
+
+
+    boolean estaUsado(){
+       if (gastado == true)
+        return true;
+        else
+        return false;
+    }
+
+    void usar(){
+        gastado = true;
+    }
+ 
+}
